@@ -2,12 +2,15 @@ import express from 'express'
 import dotenv from 'dotenv'
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import { connectDB } from "./src/lib/db.js"
+import { connectDB } from "./src/libs/db.js"
 import authRoutes from "./src/routes/auth.route.js";
 
 dotenv.config()
 
 const PORT = process.env.PORT;
+
+// import { getData } from "./waste.js";
+// getData();
 
 const app = express()
 
@@ -16,7 +19,7 @@ app.use(cookieParser());
 
 
 const allowedOrigins = [
-  "http://localhost:5173", 
+  "http://localhost:8080", 
   "https://8159-205-254-163-34.ngrok-free.app"
 ];
 

@@ -1,0 +1,535 @@
+Exercise Type,Activity,Benefits,Frequency,Duration,Intensity
+Cardio,Walking,"Burns calories, improves cardiovascular health, accessible to everyone",Daily,30-45 minutes,Moderate
+Cardio,Jogging,"Higher calorie burn, cardiovascular fitness",3-4 times per week,20-30 minutes,Moderate to High
+Cardio,Swimming,"Full body workout, low impact, good for joints",2-3 times per week,30 minutes,Moderate
+Strength,Yoga,"Builds lean muscle, improves flexibility, reduces stress",4-5 times per week,30-45 minutes,Low to Moderate
+Strength,Bodyweight Exercises,"Builds muscle, can be done anywhere",3 times per week,20-30 minutes,Moderate
+Strength,Weight Training,"Builds muscle mass, increases metabolism",2-3 times per week,30-45 minutes,Moderate to High
+Flexibility,Stretching,"Improves range of motion, prevents injury",Daily,10-15 minutes,Low
+Flexibility,Yoga,"Improves flexibility, balance, and mental focus",4-5 times per week,30-45 minutes,Low to Moderate
+Balance,Yoga Balancing Poses,"Improves core strength and stability",3 times per week,15-20 minutes,Low to Moderate
+Balance,Tai Chi,"Improves balance, reduces stress",2-3 times per week,30 minutes,Low
+Core,Planks,"Strengthens core muscles",3-4 times per week,5-10 minutes,Moderate
+Core,Pilates,"Strengthens core, improves posture",2-3 times per week,30 minutes,Moderate
+Morning Routine,Surya Namaskar,"Full body workout, energizes for the day",Daily,10-15 minutes,Moderate
+Evening Routine,Light Walking,"Aids digestion, relaxes mind",Daily,15-20 minutes,Low
+Stress Relief,Meditation,"Reduces stress hormones that contribute to weight gain",Daily,10-15 minutes,Low
+Stress Relief,Deep Breathing,"Activates parasympathetic nervous system, reduces stress",Daily,5-10 minutes,Low
+HIIT,Interval Training,"Burns more calories in less time, boosts metabolism",2 times per week,20 minutes,High
+Recovery,Rest Days,"Allows muscles to recover and rebuild",1-2 days per week,Full day,None
+Lifestyle Activity,Taking Stairs,"Incorporates exercise into daily routine",Daily,As available,Moderate
+Lifestyle Activity,Household Chores,"Burns calories through everyday activities",Daily,As needed,Low to Moderate
+
+Chapter/Section,Key Points,Tips/Advice,Page Number
+Introduction,"Don't Lose Your Mind Lose Your Weight is a guide to weight loss that focuses on mindful eating and lifestyle changes rather than restrictive diets.","Focus on sustainable lifestyle changes rather than quick fixes.",1
+Principles of Healthy Eating,"Eat regularly, include all food groups, and listen to your body's hunger signals.","Eat every 2 hours, never skip meals, especially breakfast.",10
+Breakfast,"Breakfast is the most important meal of the day and should never be skipped.","Have fruit or soaked nuts within 10-15 minutes of waking up.",15
+Mid-morning Snack,"A mid-morning snack helps maintain energy levels and prevents overeating at lunch.","Choose fruits, nuts, or homemade snacks over processed foods.",20
+Lunch,"Lunch should be substantial and include carbohydrates, proteins, and fats.","Include roti/rice, dal/meat, vegetables, and ghee/oil in your lunch.",25
+Evening Snack,"An evening snack prevents energy crashes and helps control dinner portions.","Tea/coffee with homemade snacks or fruits are good options.",30
+Dinner,"Dinner should be lighter than lunch but still nutritionally complete.","Eat dinner at least 2 hours before bedtime.",35
+Exercise,"Exercise complements good eating habits for weight management.","Include both cardio and strength training in your routine.",40
+Sleep,"Adequate sleep is crucial for weight management and overall health.","Aim for 7-8 hours of quality sleep each night.",45
+Stress Management,"Stress can lead to emotional eating and weight gain.","Practice meditation, yoga, or other stress-reduction techniques.",50
+Hydration,"Proper hydration supports metabolism and helps control hunger.","Drink water throughout the day, especially before meals.",55
+Common Myths,"Many popular diet myths can be harmful to long-term health.","Avoid extreme diets, detoxes, and eliminating entire food groups.",60
+Indian Diet Wisdom,"Traditional Indian dietary practices have inherent wisdom for health.","Incorporate traditional foods and eating patterns from Indian cuisine.",65
+Mindful Eating,"Being present and mindful while eating improves digestion and satisfaction.","Eat slowly, chew thoroughly, and avoid distractions while eating.",70
+Sustainable Weight Loss,"Sustainable weight loss comes from lifestyle changes, not quick fixes.","Aim for gradual weight loss of 0.5-1 kg per week.",75
+
+Meal Type,Food Item,Benefits,Recommended Time,Portion Size
+Early Morning,Soaked Almonds,"Rich in protein, good fats, and vitamin E",Within 15 minutes of waking up,4-6 almonds
+Early Morning,Banana,"Quick energy, potassium, fiber",Within 15 minutes of waking up,1 medium
+Breakfast,Idli with Chutney,"Complex carbs, protein, easy to digest",Within 30 minutes of exercise,2-3 idlis
+Breakfast,Poha,"Light on stomach, complex carbs, B vitamins",Within 30 minutes of exercise,1 small bowl
+Breakfast,Paratha with Curd,"Balanced meal with carbs, protein and probiotics",Within 30 minutes of exercise,1-2 parathas
+Mid-morning Snack,Fruit,"Natural sugars, fiber, vitamins",2-3 hours after breakfast,1 medium
+Mid-morning Snack,Buttermilk,"Calcium, probiotics, protein",2-3 hours after breakfast,1 glass
+Lunch,Rice with Dal and Vegetables,"Complete protein, fiber, sustained energy",12:30-2:00 PM,1 medium plate
+Lunch,Roti with Sabzi and Curd,"Complex carbs, fiber, protein",12:30-2:00 PM,2-3 rotis
+Evening Snack,Chana,"Protein, fiber, sustained energy",4:00-5:00 PM,Small handful
+Evening Snack,Homemade Chivda,"Complex carbs, good fats",4:00-5:00 PM,Small handful
+Dinner,Khichdi,"Easy to digest, complete protein",Before 8:00 PM,1 small bowl
+Dinner,Roti with Vegetable Curry,"Lighter meal, balanced nutrition",Before 8:00 PM,1-2 rotis
+Bedtime,Milk,"Calcium, tryptophan for better sleep",30 minutes before sleep,1 small cup
+Workout Days,Banana,"Quick energy before workout",30 minutes before exercise,1 medium
+Post-Workout,Coconut Water,"Electrolytes, natural hydration",Within 15 minutes after workout,1 glass
+Weight Loss Phase,Methi Water,"Helps regulate blood sugar and metabolism",First thing in morning,1 glass
+Detox,Lemon Water with Honey,"Cleansing, vitamin C, antibacterial",Early morning,1 glass
+Digestion Aid,Jeera Water,"Improves digestion, reduces bloating",After meals,1 small cup
+Metabolism Booster,Green Tea,"Antioxidants, slight metabolism boost",Mid-morning or evening,1 cup
+
+--- food_nutrition_database.csv
++++ food_nutrition_database.csv
+@@ -0,0 +1,101 @@
++Food_ID,Food_Name,Food_Category,Calories_per_100g,Protein_g,Carbs_g,Fat_g,Fiber_g,Glycemic_Index,Recommended_Meal_Time,Portion_Size_g,Ayurvedic_Property,Season_Availability,Region_Origin,Preparation_Time_min,Cooking_Method,Shelf_Life_days,Organic_Option,Processed_Level,Allergen_Info,Nutrient_Density_Score
++1001,Basmati Rice,Grains,356,6.7,78.9,0.6,0.4,58,Lunch,60,Sattvic,All Year,North India,25,Boiling,365,Yes,Minimal,None,65
++1002,Brown Rice,Grains,367,7.9,76.2,2.7,3.5,50,Lunch,60,Sattvic,All Year,South India,35,Boiling,180,Yes,Minimal,None,78
++1003,Jowar,Millets,329,10.4,72.1,1.9,6.7,62,Lunch,50,Sattvic,Winter,Western India,30,Boiling,365,Yes,Minimal,None,82
++1004,Bajra,Millets,378,11.6,67.5,5.0,11.5,54,Dinner,50,Warming,Winter,Rajasthan,30,Boiling,365,Yes,Minimal,None,85
++1005,Ragi,Millets,336,7.3,72.0,1.3,3.6,55,Dinner,50,Cooling,All Year,Karnataka,30,Boiling,365,Yes,Minimal,None,80
++1006,Whole Wheat Atta,Grains,340,13.2,71.2,2.5,12.5,45,All Meals,30,Sattvic,All Year,North India,15,Baking,180,Yes,Minimal,Gluten,75
++1007,Besan (Gram Flour),Legume Flour,387,22.0,58.0,5.8,10.8,35,Evening Snack,25,Warming,All Year,North India,10,Frying,180,Yes,Minimal,None,79
++1008,Poha (Flattened Rice),Processed Grains,351,6.7,78.2,0.6,0.4,65,Breakfast,40,Light,All Year,Maharashtra,15,Steaming,180,Yes,Minimal,None,60
++1009,Semolina (Suji),Processed Grains,360,12.7,74.7,0.6,3.9,55,Breakfast,30,Sattvic,All Year,All India,15,Boiling,180,Yes,Minimal,Gluten,65
++1010,Oats,Grains,389,16.9,66.3,6.9,10.6,55,Breakfast,30,Warming,All Year,Imported,10,Boiling,180,Yes,Minimal,Gluten,85
++1011,Moong Dal,Legumes,347,24.0,59.9,1.2,16.5,25,Lunch,30,Sattvic,All Year,All India,30,Boiling,365,Yes,Minimal,None,88
++1012,Toor Dal,Legumes,335,22.3,57.6,1.5,15.0,28,Lunch,30,Sattvic,All Year,South India,45,Boiling,365,Yes,Minimal,None,85
++1013,Chana Dal,Legumes,360,17.1,60.9,5.3,13.6,30,Lunch,30,Warming,All Year,North India,45,Boiling,365,Yes,Minimal,None,87
++1014,Urad Dal,Legumes,341,25.2,58.9,1.6,18.3,43,Dinner,25,Warming,All Year,South India,45,Boiling,365,Yes,Minimal,None,86
++1015,Rajma (Kidney Beans),Legumes,333,23.6,60.0,0.8,24.9,29,Lunch,30,Warming,All Year,North India,60,Boiling,365,Yes,Minimal,None,90
++1016,Chickpeas (Kabuli Chana),Legumes,364,19.3,61.0,6.0,17.4,28,Evening Snack,30,Warming,All Year,North India,60,Boiling,365,Yes,Minimal,None,89
++1017,Black Chana,Legumes,360,20.5,61.0,5.0,12.2,33,Evening Snack,30,Warming,All Year,North India,60,Boiling,365,Yes,Minimal,None,88
++1018,Green Moong (Whole),Legumes,347,23.9,62.6,1.2,16.3,29,Evening Snack,25,Cooling,All Year,All India,60,Boiling,365,Yes,Minimal,None,87
++1019,Masoor Dal (Red Lentils),Legumes,343,25.8,59.0,1.1,10.8,26,Lunch,25,Sattvic,All Year,North India,30,Boiling,365,Yes,Minimal,None,86
++1020,Soybean,Legumes,446,36.5,30.2,19.9,9.3,18,Lunch,20,Warming,All Year,Central India,60,Boiling,365,Yes,Minimal,Soy,92
++1021,Paneer,Dairy,265,18.3,3.6,20.8,0,0,All Meals,50,Cooling,All Year,North India,10,None,7,Yes,Minimal,Lactose,75
++1022,Cow's Milk (Full Fat),Dairy,67,3.2,4.8,4.0,0,27,Morning/Night,200,Cooling,All Year,All India,0,Boiling,3,Yes,Minimal,Lactose,70
++1023,Curd (Yogurt),Dairy,59,3.3,4.7,3.3,0,36,Lunch,100,Cooling,All Year,All India,720,Fermentation,7,Yes,Minimal,Lactose,75
++1024,Buttermilk (Chaas),Dairy,40,3.1,4.8,0.9,0,35,After Meals,200,Cooling,Summer,All India,5,Churning,1,Yes,Minimal,Lactose,65
++1025,Ghee,Dairy,900,0,0,100,0,0,All Meals,5,Warming,All Year,All India,60,Clarifying,365,Yes,Minimal,Lactose,60
++1026,White Butter,Dairy,717,0.9,0.1,81.1,0,0,Breakfast,10,Cooling,All Year,North India,30,Churning,15,Yes,Minimal,Lactose,65
++1027,Khoya,Dairy,421,14.6,25.8,25.1,0,0,Desserts,25,Warming,All Year,North India,120,Reduction,15,Yes,Minimal,Lactose,70
++1028,Cheese (Processed),Dairy,348,21.4,1.7,27.8,0,0,Snacks,30,Warming,All Year,Imported,0,None,30,No,High,Lactose,60
++1029,Coconut Milk,Plant Milk,230,2.3,5.5,23.8,2.2,35,Breakfast,50,Cooling,All Year,South India,15,Extraction,3,Yes,Minimal,Tree Nuts,75
++1030,Almond Milk,Plant Milk,15,0.5,0.3,1.1,0.4,25,Breakfast,200,Cooling,All Year,Imported,15,Extraction,7,Yes,Medium,Tree Nuts,65
++1031,Apple,Fruits,52,0.3,13.8,0.2,2.4,38,Morning Snack,150,Cooling,Winter,Himachal,0,None,14,Yes,None,None,70
++1032,Banana,Fruits,89,1.1,22.8,0.3,2.6,51,Pre-workout,100,Cooling,All Year,South India,0,None,5,Yes,None,None,65
++1033,Orange,Fruits,47,0.9,11.8,0.1,2.4,43,Morning,150,Cooling,Winter,Maharashtra,0,None,14,Yes,None,None,75
++1034,Pomegranate,Fruits,83,1.7,18.7,1.2,4.0,35,Evening Snack,100,Cooling,Winter,Maharashtra,5,None,14,Yes,None,None,85
++1035,Mango,Fruits,60,0.8,15.0,0.4,1.6,51,Afternoon,150,Warming,Summer,All India,5,None,7,Yes,None,None,70
++1036,Papaya,Fruits,43,0.5,10.8,0.3,1.7,60,Morning,200,Cooling,All Year,All India,5,None,3,Yes,None,None,75
++1037,Guava,Fruits,68,2.6,14.3,0.9,5.4,12,Evening Snack,100,Cooling,Winter,All India,0,None,3,Yes,None,None,90
++1038,Watermelon,Fruits,30,0.6,7.6,0.2,0.4,72,Summer Noon,200,Cooling,Summer,All India,5,None,5,Yes,None,None,60
++1039,Pineapple,Fruits,50,0.5,13.1,0.1,1.4,59,Evening Snack,100,Warming,Summer,Northeast,5,None,5,Yes,None,None,70
++1040,Strawberry,Fruits,32,0.7,7.7,0.3,2.0,40,Morning Snack,100,Cooling,Winter,Imported,0,None,3,Yes,None,None,85
++1041,Spinach (Palak),Vegetables,23,2.9,3.6,0.4,2.2,15,Lunch/Dinner,100,Cooling,Winter,All India,10,Steaming,3,Yes,None,None,95
++1042,Fenugreek Leaves (Methi),Vegetables,49,4.4,6.0,0.9,4.9,25,Lunch/Dinner,50,Warming,Winter,North India,15,Steaming,2,Yes,None,None,90
++1043,Bottle Gourd (Lauki),Vegetables,14,0.6,3.2,0.0,0.5,15,Dinner,150,Cooling,Summer,All India,15,Boiling,5,Yes,None,None,65
++1044,Ridge Gourd (Turai),Vegetables,18,0.5,4.3,0.1,0.5,15,Dinner,100,Cooling,Summer,All India,15,Boiling,3,Yes,None,None,60
++1045,Bitter Gourd (Karela),Vegetables,17,1.0,3.7,0.2,2.8,25,Lunch,75,Cooling,Summer,All India,20,Frying,5,Yes,None,None,85
++1046,Brinjal (Eggplant),Vegetables,25,1.0,6.0,0.2,3.4,15,Dinner,100,Cooling,All Year,All India,15,Roasting,5,Yes,None,None,70
++1047,Cauliflower,Vegetables,25,1.9,5.0,0.3,2.0,15,Lunch/Dinner,100,Cooling,Winter,North India,15,Steaming,7,Yes,None,None,75
++1048,Cabbage,Vegetables,25,1.3,5.8,0.1,2.5,10,Dinner,100,Cooling,Winter,All India,15,Steaming,7,Yes,None,None,70
++1049,Capsicum (Bell Pepper),Vegetables,20,0.9,4.6,0.2,1.7,15,Lunch/Dinner,50,Warming,All Year,All India,10,Roasting,7,Yes,None,None,80
++1050,Tomato,Vegetables,18,0.9,3.9,0.2,1.2,15,All Meals,100,Cooling,All Year,All India,5,None,7,Yes,None,None,75
++1051,Carrot,Vegetables,41,0.9,9.6,0.2,2.8,35,All Meals,100,Warming,Winter,North India,5,Steaming,14,Yes,None,None,85
++1052,Beetroot,Vegetables,43,1.6,9.6,0.2,2.8,64,Lunch,100,Warming,Winter,All India,15,Boiling,14,Yes,None,None,80
++1053,Cucumber,Vegetables,15,0.7,3.6,0.1,0.5,15,Summer Snack,100,Cooling,Summer,All India,5,None,5,Yes,None,None,65
++1054,Onion,Vegetables,40,1.1,9.3,0.1,1.7,15,All Meals,50,Warming,All Year,All India,5,Sautéing,30,Yes,None,None,70
++1055,Garlic,Vegetables,149,6.4,33.1,0.5,2.1,30,All Meals,5,Warming,All Year,All India,5,Sautéing,180,Yes,None,None,85
++1056,Ginger,Spices,80,1.8,17.8,0.8,2.0,15,All Meals,5,Warming,All Year,All India,5,Grating,14,Yes,None,None,80
++1057,Turmeric,Spices,312,9.7,67.1,3.3,21.0,15,All Meals,2,Warming,All Year,South India,5,Boiling,730,Yes,None,None,95
++1058,Cumin Seeds (Jeera),Spices,375,17.8,44.2,22.3,10.5,15,All Meals,2,Warming,All Year,Gujarat,5,Roasting,365,Yes,None,None,90
++1059,Coriander Seeds (Dhania),Spices,298,12.4,54.2,17.8,41.9,15,All Meals,2,Cooling,All Year,All India,5,Roasting,365,Yes,None,None,85
++1060,Black Pepper,Spices,251,10.4,64.8,3.3,25.3,15,All Meals,1,Warming,All Year,Kerala,5,None,730,Yes,None,None,90
++1061,Cardamom (Elaichi),Spices,311,10.8,68.5,6.7,28.0,15,All Meals,1,Warming,All Year,Kerala,5,None,365,Yes,None,None,85
++1062,Cinnamon (Dalchini),Spices,247,3.9,80.6,1.2,53.1,15,All Meals,1,Warming,All Year,Kerala,5,None,730,Yes,None,None,85
++1063,Cloves (Laung),Spices,274,6.0,65.5,13.0,33.9,15,All Meals,1,Warming,All Year,Kerala,5,None,730,Yes,None,None,90
++1064,Mustard Seeds (Rai),Spices,508,25.3,28.1,36.2,12.5,15,All Meals,1,Warming,All Year,All India,5,Tempering,365,Yes,None,None,85
++1065,Fenugreek Seeds (Methi Dana),Spices,323,23.0,58.4,6.4,24.6,15,All Meals,1,Warming,All Year,All India,5,Soaking,365,Yes,None,None,90
++1066,Asafoetida (Hing),Spices,310,4.0,67.8,1.1,4.4,15,All Meals,0.5,Warming,All Year,Imported,5,None,730,Yes,None,Gluten,75
++1067,Almonds,Nuts,579,21.2,21.7,49.9,12.5,0,Morning,10,Warming,All Year,Imported,0,Soaking,365,Yes,None,Tree Nuts,90
++1068,Walnuts,Nuts,654,15.2,13.7,65.2,6.7,15,Morning,10,Warming,All Year,Kashmir,0,None,180,Yes,None,Tree Nuts,95
++1069,Cashews,Nuts,553,18.2,30.2,43.9,3.3,25,Evening Snack,10,Warming,All Year,Goa,0,Roasting,180,Yes,None,Tree Nuts,80
++1070,Pistachios,Nuts,560,20.2,27.5,45.4,10.3,15,Evening Snack,10,Warming,All Year,Imported,0,Roasting,180,Yes,None,Tree Nuts,85
++1071,Peanuts,Nuts,567,25.8,16.1,49.2,8.5,14,Evening Snack,15,Warming,All Year,Gujarat,0,Roasting,180,Yes,None,Peanuts,80
++1072,Flaxseeds,Seeds,534,18.3,28.9,42.2,27.3,0,Morning,5,Warming,All Year,Imported,0,Grinding,365,Yes,None,None,95
++1073,Chia Seeds,Seeds,486,16.5,42.1,30.7,34.4,1,Morning,5,Cooling,All Year,Imported,0,Soaking,730,Yes,None,None,95
++1074,Pumpkin Seeds,Seeds,559,30.2,10.7,49.1,6.0,25,Evening Snack,10,Warming,All Year,All India,0,Roasting,180,Yes,None,None,90
++1075,Sunflower Seeds,Seeds,584,20.8,20.0,51.5,8.6,35,Evening Snack,10,Warming,All Year,All India,0,Roasting,180,Yes,None,None,85
++1076,Sesame Seeds (Til),Seeds,573,17.7,23.4,49.7,11.8,35,All Meals,5,Warming,All Year,All India,0,Roasting,180,Yes,None,Sesame,90
++1077,Coconut (Fresh),Nuts,354,3.3,15.2,33.5,9.0,45,All Meals,30,Cooling,All Year,South India,5,Grating,7,Yes,None,Tree Nuts,75
++1078,Coconut Oil,Oils,892,0,0,99.1,0,0,All Meals,10,Cooling,All Year,South India,0,Cold Pressing,365,Yes,None,None,65
++1079,Mustard Oil,Oils,884,0,0,100,0,0,All Meals,10,Warming,All Year,East India,0,Cold Pressing,365,Yes,None,None,70
++1080,Groundnut Oil,Oils,884,0,0,100,0,0,All Meals,10,Neutral,All Year,Gujarat,0,Cold Pressing,365,Yes,None,None,65
++1081,Sesame Oil,Oils,884,0,0,100,0,0,All Meals,10,Warming,All Year,South India,0,Cold Pressing,365,Yes,None,None,75
++1082,Olive Oil,Oils,884,0,0,100,0,0,Salads,10,Cooling,All Year,Imported,0,Cold Pressing,365,Yes,None,None,80
++1083,Jaggery (Gur),Sweeteners,383,0.4,95.0,0.1,0,65,Post Meals,10,Warming,Winter,All India,0,None,365,Yes,Minimal,None,60
++1084,Honey,Sweeteners,304,0.3,82.4,0,0.2,55,Morning,10,Warming,All Year,All India,0,None,730,Yes,None,None,65
++1085,Sugar (White),Sweeteners,387,0,99.9,0,0,68,Limited Use,5,Neutral,All Year,All India,0,Refining,730,No,High,None,20
++1086,Palm Jaggery,Sweeteners,368,1.5,92.0,0.2,0,40,Post Meals,10,Warming,Winter,South India,0,None,365,Yes,Minimal,None,55
++1087,Maple Syrup,Sweeteners,260,0,67.0,0.1,0,54,Breakfast,10,Neutral,All Year,Imported,0,None,365,Yes,Medium,None,40
++1088,Dates,Dry Fruits,282,2.5,75.0,0.4,8.0,50,Evening Snack,25,Warming,All Year,Imported,0,None,365,Yes,None,None,75
++1089,Raisins,Dry Fruits,299,3.1,79.2,0.5,3.7,65,Evening Snack,15,Warming,All Year,Maharashtra,0,None,365,Yes,None,None,70
++1090,Dried Figs,Dry Fruits,249,3.3,63.9,0.9,9.8,61,Evening Snack,30,Warming,All Year,Maharashtra,0,None,365,Yes,None,None,80
++1091,Dried Apricots,Dry Fruits,241,3.4,62.6,0.5,7.3,30,Evening Snack,30,Warming,All Year,Imported,0,None,365,Yes,None,None,75
++1092,Prunes,Dry Fruits,240,2.2,63.9,0.4,7.1,29,Morning,30,Warming,All Year,Imported,0,None,365,Yes,None,None,80
++1093,Green Tea,Beverages,1,0.2,0.1,0,0,0,Morning/Evening,200,Cooling,All Year,Assam,5,Brewing,365,Yes,Minimal,None,75
++1094,Black Tea,Beverages,1,0.1,0.1,0,0,0,Morning/Evening,200,Warming,All Year,Assam,5,Brewing,365,Yes,Minimal,None,65
++1095,Coffee,Beverages,2,0.1,0.3,0,0,0,Morning,200,Warming,All Year,South India,5,Brewing,30,Yes,Minimal,None,70
++1096,Lemon Water,Beverages,6,0.1,1.7,0.1,0.1,20,Morning,200,Cooling,All Year,All India,5,None,1,Yes,None,None,60
++1097,Coconut Water,Beverages,19,0.7,3.7,0.2,1.1,35,Summer Noon,200,Cooling,Summer,South India,0,None,1,Yes,None,None,70
++1098,Sugarcane Juice,Beverages,65,0.2,16.5,0.1,0.2,43,Summer Noon,200,Cooling,Winter,All India,5,Extraction,0,Yes,None,None,55
++1099,Buttermilk (Spiced),Beverages,40,3.1,4.8,0.9,0,35,After Meals,200,Cooling,Summer,All India,10,Churning,1,Yes,Minimal,Lactose,70
++1100,Sattu Drink,Beverages,94,5.5,17.2,0.8,1.5,25,Summer Noon,200,Cooling,Summer,Bihar,10,Mixing,1,Yes,Minimal,None,80
+
+--- weight_loss_meal_plans.csv
++++ weight_loss_meal_plans.csv
+@@ -0,0 +1,50 @@
++Plan_ID,Day_Number,Meal_Type,Time,Food_Item_1,Quantity_1,Food_Item_2,Quantity_2,Food_Item_3,Quantity_3,Food_Item_4,Quantity_4,Total_Calories,Total_Protein,Total_Carbs,Total_Fat,Fiber,Preparation_Time,Cooking_Method,Hydration_Level,Seasonal_Adjustment,Difficulty_Level,Satiety_Score,Energy_Level_Impact,Digestibility_Score,Ayurvedic_Balance
++MP001,1,Early Morning,6:00 AM,Warm Water with Lemon,1 glass,Soaked Almonds,6 pieces,,,,,45,1.5,2.5,3.5,0.5,5,None,High,All Seasons,Easy,7,8,9,Balanced
++MP001,1,Breakfast,8:00 AM,Vegetable Poha,1 bowl,Curd,1 small bowl,,,,,320,9.5,45.2,10.3,3.5,15,Steaming,Medium,All Seasons,Easy,8,9,8,Balanced
++MP001,1,Mid-Morning,10:30 AM,Apple,1 medium,,,,,,,52,0.3,13.8,0.2,2.4,0,None,Medium,Winter,Easy,6,7,9,Cooling
++MP001,1,Lunch,1:00 PM,Brown Rice,1 small bowl,Moong Dal,1 small bowl,Mixed Vegetable Curry,1 small bowl,Curd,1 small bowl,450,18.5,65.3,10.2,8.5,30,Boiling,High,All Seasons,Medium,9,7,8,Balanced
++MP001,1,Evening Snack,4:30 PM,Roasted Chana,1 small handful,Green Tea,1 cup,,,,,150,8.5,20.3,2.5,5.5,5,Roasting,Medium,All Seasons,Easy,7,8,7,Warming
++MP001,1,Dinner,7:30 PM,Roti,2 pieces,Palak Paneer,1 small bowl,,,,,350,14.5,40.2,12.5,6.5,25,Sautéing,Medium,Winter,Medium,8,6,7,Balanced
++MP001,1,Bedtime,9:30 PM,Warm Milk with Turmeric,1 cup,,,,,,,120,4.5,6.5,6.5,0,5,Boiling,Medium,All Seasons,Easy,6,5,8,Warming
++MP002,1,Early Morning,6:30 AM,Methi Water,1 glass,Soaked Walnuts,4 pieces,,,,,120,3.5,2.5,10.5,1.5,5,Soaking,High,All Seasons,Easy,6,8,8,Warming
++MP002,1,Breakfast,8:30 AM,Vegetable Upma,1 bowl,Buttermilk,1 glass,,,,,300,10.5,42.5,8.5,4.5,20,Steaming,Medium,All Seasons,Medium,8,9,8,Balanced
++MP002,1,Mid-Morning,11:00 AM,Pomegranate,1 small bowl,,,,,,,83,1.7,18.7,1.2,4.0,0,None,Medium,Winter,Easy,7,8,9,Cooling
++MP002,1,Lunch,1:30 PM,Millet Khichdi,1 bowl,Mixed Vegetable Raita,1 small bowl,,,,,380,14.5,55.5,9.5,7.5,25,Boiling,High,Winter,Medium,9,7,9,Balanced
++MP002,1,Evening Snack,5:00 PM,Sprouts Chaat,1 small bowl,Lemon Water,1 glass,,,,,180,9.5,25.5,3.5,6.5,15,Boiling,High,All Seasons,Medium,8,8,8,Balanced
++MP002,1,Dinner,8:00 PM,Vegetable Soup,1 bowl,Multigrain Roti,1 piece,Grilled Vegetables,1 small plate,,320,12.5,38.5,10.5,8.5,30,Grilling,High,All Seasons,Medium,8,6,9,Balanced
++MP002,1,Bedtime,10:00 PM,Chamomile Tea,1 cup,,,,,,,5,0.1,1.2,0.1,0.2,5,Brewing,High,All Seasons,Easy,5,4,9,Cooling
++MP003,1,Early Morning,5:30 AM,Warm Water with Honey,1 glass,Chia Seeds,1 teaspoon,,,,,70,1.5,15.5,2.5,2.5,5,Soaking,High,All Seasons,Easy,6,8,8,Balanced
++MP003,1,Breakfast,7:30 AM,Vegetable Oats Porridge,1 bowl,Mixed Nuts,1 small handful,,,,,280,12.5,35.5,10.5,6.5,15,Boiling,Medium,All Seasons,Easy,8,9,8,Warming
++MP003,1,Mid-Morning,10:00 AM,Guava,1 medium,,,,,,,68,2.6,14.3,0.9,5.4,0,None,Medium,Winter,Easy,7,8,9,Cooling
++MP003,1,Lunch,12:30 PM,Quinoa Pulao,1 bowl,Cucumber Raita,1 small bowl,Lentil Soup,1 small bowl,,420,18.5,50.5,12.5,9.5,35,Boiling,High,All Seasons,Medium,9,8,8,Balanced
++MP003,1,Evening Snack,4:00 PM,Roasted Makhana,1 small handful,Green Tea,1 cup,,,,,120,5.5,18.5,2.5,2.5,10,Roasting,Medium,All Seasons,Easy,7,8,8,Balanced
++MP003,1,Dinner,7:00 PM,Steamed Vegetables,1 plate,Multigrain Roti,1 piece,Tofu Curry,1 small bowl,,350,18.5,35.5,12.5,8.5,30,Steaming,Medium,All Seasons,Medium,8,6,9,Balanced
++MP003,1,Bedtime,9:00 PM,Almond Milk,1 cup,,,,,,,40,1.5,2.5,3.5,0.5,5,None,Medium,All Seasons,Easy,5,4,9,Cooling
++MP004,1,Early Morning,6:00 AM,Fenugreek Water,1 glass,Soaked Almonds,5 pieces,,,,,40,1.5,2.0,3.0,0.5,5,Soaking,High,All Seasons,Easy,6,8,8,Warming
++MP004,1,Breakfast,8:00 AM,Vegetable Idli,3 pieces,Coconut Chutney,2 tablespoons,Sambar,1 small bowl,,300,10.5,45.5,6.5,5.5,20,Steaming,Medium,All Seasons,Medium,8,9,8,Balanced
++MP004,1,Mid-Morning,10:30 AM,Orange,1 medium,,,,,,,47,0.9,11.8,0.1,2.4,0,None,Medium,Winter,Easy,6,8,9,Cooling
++MP004,1,Lunch,1:00 PM,Brown Rice,1 small bowl,Fish Curry,1 small bowl,Stir-Fried Vegetables,1 small bowl,,450,22.5,55.5,12.5,6.5,35,Boiling,High,All Seasons,Medium,9,8,8,Balanced
++MP004,1,Evening Snack,4:30 PM,Buttermilk with Cumin,1 glass,Roasted Chana,1 small handful,,,,,180,9.5,20.5,3.5,5.5,10,None,High,Summer,Easy,7,7,8,Cooling
++MP004,1,Dinner,7:30 PM,Vegetable Khichdi,1 bowl,Cucumber Salad,1 small bowl,,,,,320,12.5,45.5,8.5,5.5,25,Boiling,Medium,All Seasons,Easy,8,6,9,Balanced
++MP004,1,Bedtime,9:30 PM,Warm Milk with Nutmeg,1 cup,,,,,,,120,4.5,6.5,6.5,0,5,Boiling,Medium,All Seasons,Easy,6,4,8,Warming
++MP005,1,Early Morning,5:45 AM,Warm Water with Lemon and Honey,1 glass,Flaxseeds,1 teaspoon,,,,,70,1.5,15.5,2.5,2.5,5,None,High,All Seasons,Easy,6,8,8,Balanced
++MP005,1,Breakfast,7:45 AM,Vegetable Dalia,1 bowl,Curd,1 small bowl,,,,,280,12.5,38.5,6.5,6.5,20,Boiling,Medium,All Seasons,Medium,8,9,8,Balanced
++MP005,1,Mid-Morning,10:15 AM,Pear,1 medium,,,,,,,57,0.4,15.2,0.1,3.1,0,None,Medium,Winter,Easy,6,7,9,Cooling
++MP005,1,Lunch,12:45 PM,Multigrain Roti,2 pieces,Paneer Bhurji,1 small bowl,Mixed Vegetable Curry,1 small bowl,Green Salad,1 small plate,450,20.5,45.5,18.5,8.5,30,Sautéing,High,All Seasons,Medium,9,8,8,Balanced
++MP005,1,Evening Snack,4:15 PM,Sprouts Salad,1 small bowl,Lemon Water,1 glass,,,,,150,8.5,20.5,2.5,5.5,15,None,High,All Seasons,Easy,7,8,9,Cooling
++MP005,1,Dinner,7:15 PM,Vegetable Soup,1 bowl,Grilled Chicken,1 small piece,Steamed Vegetables,1 small bowl,,350,25.5,25.5,12.5,6.5,30,Grilling,High,All Seasons,Medium,8,7,9,Balanced
++MP005,1,Bedtime,9:15 PM,Chamomile Tea,1 cup,,,,,,,5,0.1,1.2,0.1,0.2,5,Brewing,High,All Seasons,Easy,5,4,9,Cooling
++MP006,1,Early Morning,6:15 AM,Warm Water with Basil Leaves,1 glass,Soaked Walnuts,4 pieces,,,,,120,3.5,2.5,10.5,1.5,5,Soaking,High,All Seasons,Easy,6,8,8,Warming
++MP006,1,Breakfast,8:15 AM,Vegetable Besan Chilla,2 pieces,Mint Chutney,2 tablespoons,,,,,250,12.5,30.5,8.5,5.5,15,Pan Frying,Medium,All Seasons,Medium,8,9,8,Balanced
++MP006,1,Mid-Morning,10:45 AM,Watermelon,1 small bowl,,,,,,,30,0.6,7.6,0.2,0.4,0,None,High,Summer,Easy,5,7,9,Cooling
++MP006,1,Lunch,1:15 PM,Millet Roti,2 pieces,Dal Tadka,1 small bowl,Bottle Gourd Curry,1 small bowl,Cucumber Raita,1 small bowl,420,18.5,55.5,10.5,9.5,35,Boiling,High,All Seasons,Medium,9,8,8,Balanced
++MP006,1,Evening Snack,4:45 PM,Roasted Peanuts,1 small handful,Coconut Water,1 glass,,,,,200,8.5,15.5,10.5,3.5,5,Roasting,High,Summer,Easy,7,8,8,Balanced
++MP006,1,Dinner,7:45 PM,Vegetable Daliya Khichdi,1 bowl,Mixed Vegetable Salad,1 small plate,,,,,320,14.5,45.5,6.5,8.5,25,Boiling,Medium,All Seasons,Easy,8,6,9,Balanced
++MP006,1,Bedtime,9:45 PM,Warm Milk with Turmeric,1 cup,,,,,,,120,4.5,6.5,6.5,0,5,Boiling,Medium,All Seasons,Easy,6,4,8,Warming
++MP007,1,Early Morning,6:00 AM,Warm Water with Cinnamon,1 glass,Soaked Almonds,6 pieces,,,,,45,1.5,2.5,3.5,0.5,5,None,High,All Seasons,Easy,6,8,8,Warming
++MP007,1,Breakfast,8:00 AM,Vegetable Uttapam,2 pieces,Coconut Chutney,2 tablespoons,Sambar,1 small bowl,,350,12.5,50.5,8.5,6.5,25,Pan Frying,Medium,All Seasons,Medium,9,9,8,Balanced
++MP007,1,Mid-Morning,10:30 AM,Papaya,1 small bowl,,,,,,,43,0.5,10.8,0.3,1.7,0,None,Medium,All Seasons,Easy,6,8,9,Cooling
++MP007,1,Lunch,1:00 PM,Brown Rice,1 small bowl,Rajma Curry,1 small bowl,Cabbage Poriyal,1 small bowl,Buttermilk,1 glass,480,20.5,70.5,8.5,12.5,40,Boiling,High,All Seasons,Medium,9,7,7,Balanced
++MP007,1,Evening Snack,4:30 PM,Vegetable Cutlet,2 pieces,Green Tea,1 cup,,,,,200,6.5,30.5,6.5,3.5,25,Shallow Frying,Medium,All Seasons,Medium,8,7,7,Balanced
++MP007,1,Dinner,7:30 PM,Multigrain Roti,1 piece,Palak Paneer,1 small bowl,Cucumber Salad,1 small plate,,320,14.5,30.5,14.5,5.5,25,Sautéing,Medium,Winter,Medium,8,6,8,Balanced
++MP007,1,Bedtime,9:30 PM,Warm Milk with Cardamom,1 cup,,,,,,,120,4.5,6.5,6.5,0,5,Boiling,Medium,All Seasons,Easy,6,4,8,Warming
+
+--- exercise_database.csv
++++ exercise_database.csv
+@@ -0,0 +1,101 @@
++Exercise_ID,Exercise_Name,Category,Primary_Muscle_Group,Secondary_Muscle_Group,Equipment_Required,Difficulty_Level,Calories_Burned_per_30min,Recommended_Sets,Recommended_Reps,Rest_Between_Sets_sec,Duration_min,Intensity_Level,Impact_Level,Indoor_Outdoor,Best_Time_of_Day,Contraindications,Modifications_Available,Breathing_Pattern,Form_Tips,Benefits,Weight_Loss_Effectiveness,Muscle_Building_Effectiveness,Cardiovascular_Effectiveness,Flexibility_Effectiveness,Stress_Reduction_Effectiveness,Suitable_for_Beginners,Suitable_for_Seniors,Suitable_for_Pregnancy,Ayurvedic_Dosha_Balance,Seasonal_Recommendation
++E001,Walking,Cardio,Legs,Core,None,Beginner,120,1,1,0,30,Low to Moderate,Low,Both,Morning/Evening,None,Adjust pace and distance,Normal,Maintain good posture; swing arms naturally,"Improves cardiovascular health, burns calories, accessible to everyone",7,2,6,3,8,Yes,Yes,Yes,Vata-Kapha,All Seasons
++E002,Jogging,Cardio,Legs,Core,None,Intermediate,250,1,1,0,20,Moderate to High,Moderate,Both,Morning,Joint issues,Walk-jog intervals,Rhythmic,"Land midfoot, not heel; keep shoulders relaxed","Higher calorie burn, cardiovascular fitness, bone density",8,3,8,3,7,No,No,No,Vata-Pitta,Avoid Summer Noon
++E003,Swimming,Cardio,Full Body,None,Pool,Intermediate,300,1,1,0,30,Moderate,Low,Indoor,Any,Ear infections,Water walking,Controlled,"Keep body aligned; exhale underwater","Full body workout, low impact, good for joints, cardiovascular health",7,5,9,6,8,Yes,Yes,Yes,Kapha-Pitta,All Seasons
++E004,Cycling,Cardio,Legs,Core,Bicycle,Intermediate,300,1,1,0,30,Moderate to High,Low,Both,Morning/Evening,Back issues,Stationary bike,Normal,"Adjust seat height; keep slight bend in knee at bottom of pedal stroke","Leg strength, cardiovascular health, low impact on joints",8,4,8,3,7,Yes,Yes,Yes,Vata-Kapha,All Seasons
++E005,Elliptical Training,Cardio,Full Body,None,Elliptical Machine,Beginner,270,1,1,0,30,Moderate,Low,Indoor,Any,None,Adjust resistance and incline,Normal,"Maintain upright posture; use handles for full-body workout","Low impact, full body workout, cardiovascular benefits",7,3,7,3,6,Yes,Yes,Yes,Tridoshic,All Seasons
++E006,Stair Climbing,Cardio,Legs,Glutes,Stairs,Intermediate,300,1,1,0,20,Moderate to High,Moderate,Both,Any,Knee issues,Step-ups on lower platform,Controlled,"Keep weight in heels; don't lean forward too much","Burns calories, builds lower body strength",8,5,7,2,5,No,No,No,Kapha,All Seasons
++E007,Jumping Rope,Cardio,Legs,Shoulders,Jump Rope,Intermediate,350,3,1 min,60,15,High,High,Both,Morning,Joint issues,Low jumps,Rhythmic,"Jump just high enough to clear rope; stay on balls of feet","High calorie burn, coordination, cardiovascular fitness",9,4,9,3,6,No,No,No,Vata-Pitta,Avoid Summer
++E008,Dancing,Cardio,Full Body,None,None,Beginner to Advanced,200,1,1,0,30,Moderate,Low to Moderate,Indoor,Evening,None,Adjust intensity and movements,Normal,"Stay hydrated; modify jumps if needed","Fun, stress relief, coordination, cardiovascular health",7,3,7,7,9,Yes,Yes,Yes,Tridoshic,All Seasons
++E009,HIIT (High-Intensity Interval Training),Cardio,Full Body,None,Varies,Advanced,400,1,8-10 intervals,30-60,20,High,Moderate to High,Both,Morning,Heart conditions,Extend rest periods,Controlled,"Form over speed; modify high-impact movements","Burns calories efficiently, improves metabolism, time-efficient",10,6,10,3,5,No,No,No,Pitta,Avoid Summer Noon
++E010,Surya Namaskar (Sun Salutation),Yoga,Full Body,None,Yoga Mat,Beginner to Intermediate,150,1,12 rounds,0,15,Moderate,Low,Both,Morning,Back issues,Modify poses as needed,Synchronized with movement,"Move with breath; don't strain","Full body workout, flexibility, strength, mental focus",6,4,5,8,8,Yes,Yes,No,Tridoshic,All Seasons
++E011,Hatha Yoga,Yoga,Full Body,None,Yoga Mat,Beginner to Advanced,120,1,1,0,45,Low to Moderate,Low,Indoor,Morning/Evening,Modify for injuries,Multiple modifications for each pose,Controlled,"Focus on alignment; don't force poses","Flexibility, strength, balance, stress reduction",5,3,4,9,9,Yes,Yes,Yes,Tridoshic,All Seasons
++E012,Power Yoga,Yoga,Full Body,None,Yoga Mat,Intermediate to Advanced,200,1,1,0,45,Moderate to High,Low,Indoor,Morning,Joint issues,Modify poses as needed,Controlled,"Maintain core engagement; focus on breath","Strength, flexibility, endurance, mental focus",7,5,6,8,8,No,No,No,Pitta,Avoid Summer
++E013,Yin Yoga,Yoga,Connective Tissue,None,Yoga Mat,Beginner,80,1,1,0,60,Low,Low,Indoor,Evening,None,Use props for support,Deep and slow,"Hold poses longer; focus on relaxation","Deep flexibility, stress reduction, recovery",3,1,2,10,10,Yes,Yes,Yes,Vata,All Seasons
++E014,Pranayama (Breathing Exercises),Yoga,Respiratory System,None,None,Beginner,50,1,1,0,15,Low,Low,Indoor,Morning/Evening,Respiratory conditions,Adjust duration and intensity,Specific to technique,"Follow proper technique; don't strain","Stress reduction, improved lung capacity, mental clarity",2,1,3,1,10,Yes,Yes,Yes,Tridoshic,All Seasons
++E015,Meditation,Mind-Body,None,None,None,Beginner,30,1,1,0,15,Low,Low,Indoor,Morning/Evening,None,Guided meditation for beginners,Deep and slow,"Comfortable position; don't force thoughts away","Stress reduction, mental clarity, emotional balance",1,1,1,1,10,Yes,Yes,Yes,Tridoshic,All Seasons
++E016,Tai Chi,Mind-Body,Full Body,None,None,Beginner to Intermediate,120,1,1,0,30,Low,Low,Both,Morning,None,Simplified forms for beginners,Slow and controlled,"Move slowly; coordinate breath with movement","Balance, stress reduction, gentle full-body exercise",4,2,4,6,9,Yes,Yes,Yes,Vata,All Seasons
++E017,Pilates,Core Training,Core,Full Body,Mat or Reformer,Beginner to Advanced,150,1,1,0,45,Moderate,Low,Indoor,Any,Back issues,Many modifications available,Controlled,"Focus on core engagement; precise movements","Core strength, posture, flexibility, body awareness",6,5,4,7,7,Yes,Yes,Yes,Tridoshic,All Seasons
++E018,Bodyweight Squats,Strength,Legs,Glutes,None,Beginner,100,3,15,60,15,Moderate,Moderate,Indoor,Any,Knee issues,Wall squats,Exhale on exertion,"Keep weight in heels; knees aligned with toes","Lower body strength, functional movement",5,6,4,4,3,Yes,Yes,Yes,Kapha,All Seasons
++E019,Push-ups,Strength,Chest,Shoulders/Triceps,None,Beginner to Advanced,120,3,10-15,60,15,Moderate to High,Low,Indoor,Any,Wrist/shoulder issues,Wall or knee push-ups,Exhale on exertion,"Keep body straight; elbows at 45-degree angle","Upper body strength, core stability",5,7,4,3,3,No,No,No,Pitta,All Seasons
++E020,Planks,Core Training,Core,Shoulders,None,Beginner to Advanced,80,3,30-60 sec,60,10,Moderate,Low,Indoor,Any,Wrist/shoulder issues,Forearm planks,Steady,"Keep body in straight line; engage core","Core strength, stability, endurance",4,5,3,3,4,Yes,No,No,Tridoshic,All Seasons
++E021,Lunges,Strength,Legs,Glutes,None,Beginner to Intermediate,110,3,12 per leg,60,15,Moderate,Moderate,Indoor,Any,Knee issues,Static lunges,Exhale on exertion,"Keep front knee aligned with ankle; torso upright","Lower body strength, balance, functional movement",5,6,4,5,3,Yes,No,No,Kapha,All Seasons
++E022,Burpees,HIIT,Full Body,None,None,Advanced,200,3,10-15,60,15,High,High,Indoor,Morning,Joint issues,Step back instead of jump,Controlled,"Focus on form over speed; modify as needed","Full body strength, cardiovascular fitness, calorie burn",9,6,9,3,4,No,No,No,Pitta,Avoid Summer
++E023,Mountain Climbers,HIIT,Core,Shoulders/Legs,None,Intermediate,180,3,30 sec,60,15,High,Moderate,Indoor,Any,Wrist/shoulder issues,Slower pace,Controlled,"Keep hips level; engage core throughout","Core strength, cardiovascular fitness",8,5,8,3,4,No,No,No,Pitta,All Seasons
++E024,Bicycle Crunches,Core Training,Core,Obliques,None,Beginner to Intermediate,100,3,15-20 per side,60,15,Moderate,Low,Indoor,Any,Neck/back issues,Reduce range of motion,Exhale on twist,"Keep lower back pressed into floor; slow and controlled","Core strength, oblique definition",5,5,3,4,3,Yes,No,No,Tridoshic,All Seasons
++E025,Russian Twists,Core Training,Obliques,Core,None or Weight,Intermediate,110,3,15-20 per side,60,15,Moderate,Low,Indoor,Any,Back issues,Feet on floor,Exhale on twist,"Maintain good posture; rotate from waist","Core strength, oblique definition, rotational stability",5,5,3,3,3,No,No,No,Tridoshic,All Seasons
++E026,Deadlifts,Strength,Back,Legs/Glutes,Weights,Intermediate to Advanced,150,4,8-12,90,20,High,Moderate,Indoor,Any,Back issues,Lighter weight,Exhale on exertion,"Maintain neutral spine; hinge at hips","Overall strength, posterior chain development",6,9,4,5,4,No,No,No,Kapha,All Seasons
++E027,Bench Press,Strength,Chest,Triceps/Shoulders,Bench and Weights,Intermediate,140,4,8-12,90,20,High,Low,Indoor,Any,Shoulder issues,Dumbbell press,Exhale on exertion,"Keep wrists straight; feet on floor","Upper body strength, chest development",5,9,3,3,3,No,No,No,Pitta,All Seasons
++E028,Shoulder Press,Strength,Shoulders,Triceps,Weights,Intermediate,130,4,8-12,90,20,High,Low,Indoor,Any,Shoulder issues,Seated press,Exhale on exertion,"Don't arch back; engage core","Shoulder strength and development",5,8,3,3,3,No,No,No,Pitta,All Seasons
++E029,Bicep Curls,Strength,Biceps,Forearms,Weights,Beginner to Intermediate,100,3,10-15,60,15,Moderate,Low,Indoor,Any,Wrist issues,Lighter weight,Exhale on exertion,"Keep elbows close to body; don't swing","Arm strength, bicep development",4,7,2,2,3,Yes,Yes,No,Pitta,All Seasons
++E030,Tricep Dips,Strength,Triceps,Shoulders,Bench or Chair,Beginner to Intermediate,110,3,10-15,60,15,Moderate,Low,Indoor,Any,Wrist/shoulder issues,Bent knees,Exhale on exertion,"Keep shoulders down; elbows pointing back","Arm strength, tricep development",4,7,3,3,3,Yes,No,No,Pitta,All Seasons
++E031,Lat Pulldowns,Strength,Back,Biceps,Machine,Beginner to Intermediate,120,3,10-15,60,20,Moderate,Low,Indoor,Any,Shoulder issues,Lighter weight,Exhale on exertion,"Slight arch in back; pull to upper chest","Back strength and width",5,8,3,4,3,Yes,No,No,Kapha,All Seasons
++E032,Rows,Strength,Back,Biceps,Weights or Machine,Beginner to Intermediate,130,3,10-15,60,20,Moderate,Low,Indoor,Any,Back issues,Seated rows,Exhale on exertion,"Keep back straight; pull elbows back","Back strength, posture improvement",5,8,3,3,3,Yes,No,No,Kapha,All Seasons
++E033,Leg Press,Strength,Legs,Glutes,Machine,Beginner to Intermediate,140,3,10-15,60,20,Moderate to High,Low,Indoor,Any,Knee issues,Lighter weight,Exhale on exertion,"Don't lock knees; keep feet flat","Lower body strength, leg development",5,8,3,3,3,Yes,No,No,Kapha,All Seasons
++E034,Calf Raises,Strength,Calves,None,None or Weights,Beginner,90,3,15-20,60,10,Moderate,Low,Indoor,Any,Ankle issues,Seated calf raises,Exhale on exertion,"Rise fully onto balls of feet; controlled descent","Calf strength and definition",3,6,2,3,2,Yes,Yes,No,Vata,All Seasons
++E035,Glute Bridges,Strength,Glutes,Hamstrings,None,Beginner,90,3,15-20,60,15,Moderate,Low,Indoor,Any,Back issues,Shorter range of motion,Exhale on lift,"Squeeze glutes at top; keep core engaged","Glute strength, lower back health",4,6,2,4,3,Yes,Yes,Yes,Vata,All Seasons
++E036,Side Planks,Core Training,Obliques,Shoulders,None,Intermediate,90,3,30-45 sec per side,60,10,Moderate,Low,Indoor,Any,Wrist/shoulder issues,Knees bent,Steady,"Stack shoulders; engage obliques","Core stability, oblique strength",4,5,2,4,4,No,No,No,Tridoshic,All Seasons
++E037,Bird Dog,Core Training,Core,Back,None,Beginner,70,3,10-12 per side,60,15,Low to Moderate,Low,Indoor,Any,None,Smaller range of motion,Controlled,"Keep hips level; engage core","Core stability, balance, back strength",3,4,2,5,5,Yes,Yes,Yes,Vata,All Seasons
++E038,Superman,Core Training,Back,Glutes,None,Beginner,80,3,10-15,60,15,Moderate,Low,Indoor,Any,Back issues,Smaller range of motion,Exhale on lift,"Lift limbs simultaneously; don't strain neck","Back strength, posture improvement",3,5,2,4,4,Yes,Yes,No,Vata,All Seasons
++E039,Hamstring Curls,Strength,Hamstrings,None,Machine,Beginner to Intermediate,100,3,10-15,60,15,Moderate,Low,Indoor,Any,Knee issues,Lighter weight,Exhale on curl,"Control movement; don't swing","Hamstring strength and development",4,7,2,4,3,Yes,No,No,Kapha,All Seasons
++E040,Leg Extensions,Strength,Quadriceps,None,Machine,Beginner to Intermediate,100,3,10-15,60,15,Moderate,Low,Indoor,Any,Knee issues,Lighter weight,Exhale on extension,"Don't lock knees; control movement","Quadricep strength and definition",4,7,2,3,3,Yes,No,No,Kapha,All Seasons
++E041,Lateral Raises,Strength,Shoulders,None,Weights,Beginner to Intermediate,90,3,10-15,60,15,Moderate,Low,Indoor,Any,Shoulder issues,Lighter weight,Exhale on lift,"Keep slight bend in elbows; controlled movement","Shoulder width and definition",3,6,2,3,3,Yes,No,No,Pitta,All Seasons
++E042,Face Pulls,Strength,Upper Back,Shoulders,Cable Machine,Intermediate,100,3,12-15,60,15,Moderate,Low,Indoor,Any,Shoulder issues,Lighter weight,Exhale on pull,"Pull to face level; squeeze shoulder blades","Upper back strength, posture, shoulder health",3,6,2,4,3,No,No,No,Vata,All Seasons
++E043,Kettlebell Swings,Functional,Glutes,Full Body,Kettlebell,Intermediate,200,3,15-20,60,15,High,Moderate,Indoor,Any,Back issues,Lighter weight,Exhale on swing,"Hinge at hips; power from glutes","Explosive power, cardiovascular fitness, posterior chain",7,7,7,4,5,No,No,No,Pitta,All Seasons
++E044,Battle Ropes,HIIT,Arms,Shoulders/Core,Battle Ropes,Intermediate to Advanced,250,3,30 sec,60,15,High,Low,Indoor,Any,Shoulder issues,Smaller movements,Controlled,"Keep core engaged; maintain rhythm","Upper body endurance, cardiovascular fitness",8,6,8,3,6,No,No,No,Pitta,All Seasons
++E045,Box Jumps,Plyometric,Legs,Full Body,Box,Intermediate to Advanced,220,3,10-12,90,15,High,High,Indoor,Morning,Joint issues,Step-ups,Exhale on jump,"Land softly; use arms for momentum","Explosive power, lower body strength",7,7,7,3,4,No,No,No,Pitta,Avoid Summer
++E046,Jump Squats,Plyometric,Legs,Glutes,None,Intermediate,200,3,12-15,60,15,High,High,Indoor,Morning,Joint issues,Bodyweight squats,Exhale on jump,"Land softly; maintain form","Explosive power, lower body strength, cardiovascular",7,6,7,3,4,No,No,No,Pitta,Avoid Summer
++E047,Stretching,Flexibility,Full Body,None,None,Beginner,50,1,1,0,15,Low,Low,Both,Any,Modify for injuries,Multiple modifications,Deep and slow,"Don't bounce; breathe into stretch","Flexibility, recovery, injury prevention",2,1,1,10,8,Yes,Yes,Yes,Tridoshic,All Seasons
++E048,Foam Rolling,Recovery,Full Body,None,Foam Roller,Beginner,40,1,30-60 sec per area,0,15,Low,Low,Indoor,Any,Acute injuries,Softer roller,Normal,"Roll slowly; pause on tight spots","Myofascial release, recovery, flexibility",2,1,1,7,7,Yes,Yes,No,Tridoshic,All Seasons
++E049,Walking Lunges,Functional,Legs,Glutes,None or Weights,Intermediate,130,3,10-12 per leg,60,15,Moderate,Moderate,Both,Any,Knee issues,Stationary lunges,Exhale on lunge,"Keep torso upright; step naturally","Lower body strength, balance, functional movement",6,6,5,5,3,No,No,No,Kapha,All Seasons
++E050,Farmer's Carry,Functional,Full Body,Grip,Weights,Beginner to Advanced,150,3,30-60 sec,60,15,Moderate to High,Low,Both,Any,None,Lighter weight,Controlled,"Stand tall; engage core","Grip strength, core stability, full body conditioning",6,7,5,2,4,Yes,No,No,Kapha,All Seasons
++E051,Sled Push/Pull,Functional,Full Body,None,Sled,Intermediate to Advanced,300,3,30-60 sec,90,15,High,Moderate,Both,Any,Back issues,Lighter weight,Controlled,"Maintain neutral spine; drive with legs","Full body strength, power, cardiovascular fitness",9,8,9,2,5,No,No,No,Kapha-Pitta,Avoid Summer Noon
++E052,Tire Flips,Functional,Full Body,None,Tire,Advanced,350,3,8-10,120,15,High,High,Outdoor,Morning,Back issues,Smaller tire,Exhale on flip,"Use leg drive; maintain neutral spine","Explosive power, full body strength",8,9,7,3,5,No,No,No,Kapha-Pitta,Avoid Summer
++E053,Sandbag Training,Functional,Full Body,None,Sandbag,Intermediate to Advanced,250,3,10-15,60,20,High,Moderate,Both,Any,Back issues,Lighter sandbag,Controlled,"Engage core; use proper form for each movement","Functional strength, grip strength, core stability",7,8,6,4,4,No,No,No,Kapha,All Seasons
++E054,TRX Suspension Training,Functional,Full Body,None,TRX Straps,Beginner to Advanced,200,3,10-15,60,30,Moderate to High,Low,Indoor,Any,Shoulder issues,Adjust body angle,Controlled,"Maintain tension in straps; engage core","Full body strength, stability, flexibility",6,7,5,7,5,Yes,No,No,Tridoshic,All Seasons
++E055,Medicine Ball Throws,Functional,Full Body,None,Medicine Ball,Intermediate,180,3,10-12,60,15,Moderate to High,Moderate,Both,Any,Back issues,Lighter ball,Exhale on throw,"Use full body; maintain control","Explosive power, rotational strength",6,6,5,3,4,No,No,No,Pitta,All Seasons
++E056,Agility Ladder Drills,Agility,Legs,Coordination,Agility Ladder,Beginner to Advanced,200,3,30-60 sec,60,15,Moderate to High,Moderate,Both,Any,None,Slower pace,Controlled,"Focus on precision; maintain rhythm","Footwork, coordination, agility, cardiovascular",7,4,7,4,5,Yes,No,No,Vata,All Seasons
++E057,Skipping,Cardio,Legs,Coordination,None,Beginner,150,1,1,0,15,Moderate,Moderate,Both,Morning/Evening,Joint issues,Marching in place,Rhythmic,"Light on feet; maintain rhythm","Cardiovascular health, coordination, calorie burn",7,3,7,3,6,Yes,No,No,Vata,All Seasons
++E058,Stair Running,HIIT,Legs,Cardiovascular,Stairs,Advanced,350,3,30-60 sec,90,15,High,High,Both,Morning,Joint issues,Walking stairs,Controlled,"Pump arms; stay on balls of feet","Cardiovascular fitness, leg strength, calorie burn",9,6,9,2,4,No,No,No,Pitta,Avoid Summer
++E059,Hill Sprints,HIIT,Legs,Cardiovascular,Hill,Advanced,400,5,20-30 sec,120,20,High,High,Outdoor,Morning,Joint issues,Hill walking,Controlled,"Drive with arms; maintain form","Explosive power, cardiovascular fitness, leg strength",10,7,10,2,4,No,No,No,Pitta,Avoid Summer
++E060,Kickboxing,Cardio,Full Body,None,Punching Bag (optional),Intermediate,350,1,1,0,45,High,Moderate,Indoor,Any,Joint issues,Lighter movements,Controlled,"Rotate hips for power; maintain guard","Cardiovascular fitness, coordination, stress relief",8,6,9,5,9,No,No,No,Pitta,All Seasons
++E061,Zumba,Cardio,Full Body,None,None,Beginner to Intermediate,250,1,1,0,45,Moderate to High,Moderate,Indoor,Evening,Joint issues,Modify jumps and intensity,Rhythmic,"Stay hydrated; modify as needed","Cardiovascular fitness, coordination, fun, stress relief",7,3,8,5,9,Yes,No,No,Vata-Pitta,All Seasons
++E062,Aqua Aerobics,Cardio,Full Body,None,Pool,Beginner,200,1,1,0,45,Moderate,Low,Indoor,Any,None,Adjust depth and intensity,Normal,"Use water resistance; maintain form","Low impact, full body workout, cardiovascular health",6,4,7,5,7,Yes,Yes,Yes,Tridoshic,All Seasons
++E063,Barre Workout,Strength,Full Body,None,Barre,Beginner to Intermediate,180,1,1,0,45,Moderate,Low,Indoor,Any,Joint issues,Modify ranges of motion,Controlled,"Focus on small, precise movements","Muscle endurance, flexibility, posture",6,5,5,8,6,Yes,Yes,No,Vata,All Seasons
++E064,Tabata,HIIT,Full Body,None,None,Advanced,300,8,20 sec on/10 sec off,0,4,High,Varies,Indoor,Morning,Heart conditions,Extend rest periods,Controlled,"Maintain form despite fatigue","Efficient calorie burn, improved metabolism",9,6,9,3,4,No,No,No,Pitta,Avoid Summer
++E065,Circuit Training,Mixed,Full Body,None,Varies,Intermediate,300,1,45-60 sec per station,15-30,30,Moderate to High,Varies,Indoor,Any,Varies by exercise,Modify individual exercises,Controlled,"Focus on form; pace yourself","Full body workout, time efficiency, variety",8,7,8,4,5,No,No,No,Tridoshic,All Seasons
++E066,CrossFit,Mixed,Full Body,None,Varies,Advanced,400,1,Varies,Varies,60,High,High,Indoor,Morning,Joint issues,Scale movements,Controlled,"Technique before intensity; scale as needed","Strength, power, endurance, community",9,8,9,5,6,No,No,No,Pitta,Avoid Summer
++E067,Hiking,Cardio,Legs,Core,None,Beginner to Advanced,300,1,1,0,60,Moderate,Moderate,Outdoor,Morning,Joint issues,Choose easier trails,Normal,"Use proper footwear; stay hydrated","Cardiovascular health, leg strength, stress relief, nature connection",7,4,7,4,9,Yes,No,No,Tridoshic,Avoid Rainy Season
++E068,Rock Climbing,Strength,Full Body,None,Climbing Wall,Intermediate to Advanced,350,1,1,0,60,High,Low,Both,Any,Fear of heights,Bouldering,Controlled,"Use legs more than arms; plan routes","Full body strength, problem solving, focus",7,8,6,8,8,No,No,No,Vata,Avoid Rainy Season
++E069,Stand-up Paddleboarding,Balance,Core,Full Body,Paddleboard,Beginner to Intermediate,200,1,1,0,60,Moderate,Low,Outdoor,Morning,None,Kneel instead of stand,Controlled,"Engage core; look forward","Core strength, balance, full body workout",6,4,6,5,8,Yes,No,No,Vata-Pitta,Summer
++E070,Kayaking,Upper Body,Back,Arms,Kayak,Beginner to Intermediate,250,1,1,0,60,Moderate,Low,Outdoor,Morning,Shoulder issues,Recreational pace,Normal,"Rotate from torso; maintain good posture","Upper body strength, cardiovascular health, nature connection",6,5,7,4,8,Yes,No,No,Pitta,Summer
++E071,Tennis,Cardio,Full Body,None,Tennis Equipment,Intermediate,350,1,1,0,60,Moderate to High,Moderate,Outdoor,Morning/Evening,Elbow/shoulder issues,Doubles play,Controlled,"Bend knees; follow through on strokes","Cardiovascular fitness, coordination, agility",8,5,8,6,7,No,No,No,Pitta,Avoid Summer Noon
++E072,Basketball,Cardio,Full Body,None,Basketball,Intermediate,400,1,1,0,60,High,High,Both,Evening,Joint issues,Shooting practice,Controlled,"Stay on balls of feet; bend knees when landing","Cardiovascular fitness, coordination, teamwork",9,6,9,5,7,No,No,No,Pitta,Avoid Summer Noon
++E073,Soccer,Cardio,Legs,Full Body,Soccer Ball,Intermediate,450,1,1,0,90,High,High,Outdoor,Evening,Joint issues,Casual play,Controlled,"Stay hydrated; warm up properly","Cardiovascular fitness, leg strength, teamwork",9,6,9,5,7,No,No,No,Pitta,Avoid Summer Noon
++E074,Volleyball,Cardio,Full Body,None,Volleyball,Intermediate,300,1,1,0,60,Moderate to High,Moderate,Both,Evening,Shoulder issues,Recreational play,Controlled,"Bend knees when landing; use legs for power","Cardiovascular fitness, coordination, teamwork",7,5,7,5,7,No,No,No,Pitta,Avoid Summer Noon
++E075,Badminton,Cardio,Full Body,None,Badminton Equipment,Beginner to Intermediate,300,1,1,0,60,Moderate to High,Moderate,Both,Evening,Wrist/shoulder issues,Doubles play,Controlled,"Use wrist snap for power; move feet to position","Cardiovascular fitness, coordination, agility",7,4,8,5,7,Yes,No,No,Pitta,Avoid Summer Noon
++E076,Table Tennis,Coordination,Upper Body,Legs,Table Tennis Equipment,Beginner to Intermediate,200,1,1,0,60,Moderate,Low,Indoor,Any,None,Recreational play,Controlled,"Stay light on feet; use whole body for shots","Coordination, reflexes, light cardiovascular workout",5,3,6,4,7,Yes,Yes,No,Vata,All Seasons
++E077,Golf,Coordination,Core,Upper Body,Golf Equipment,Beginner to Advanced,200,1,1,0,180,Low to Moderate,Low,Outdoor,Morning,Back issues,Use cart instead of walking,Controlled,"Rotate from hips; maintain spine angle","Walking, coordination, focus, outdoor activity",4,3,4,4,8,Yes,Yes,No,Vata,Avoid Summer Noon
++E078,Bowling,Coordination,Upper Body,None,Bowling Equipment,Beginner,150,1,1,0,60,Low,Low,Indoor,Any,Wrist/back issues,Lighter ball,Controlled,"Keep wrist straight; follow through","Light activity, coordination, social",3,2,3,3,7,Yes,Yes,No,Vata,All Seasons
++E079,Archery,Focus,Upper Body,Core,Archery Equipment,Beginner to Advanced,150,1,1,0,60,Low to Moderate,Low,Both,Any,Shoulder issues,Lighter draw weight,Controlled,"Maintain alignment; follow through","Focus, upper body strength, mental discipline",3,4,2,4,9,Yes,No,No,Vata,All Seasons
++E080,Martial Arts,Mixed,Full Body,None,None,Beginner to Advanced,350,1,1,0,60,Moderate to High,Moderate,Indoor,Any,Joint issues,Modify techniques,Controlled,"Focus on technique; control movements","Self-defense, discipline, full body workout, focus",8,7,8,8,9,Yes,No,No,Tridoshic,All Seasons
++E081,Boxing Training,Cardio,Upper Body,Core,Boxing Equipment,Intermediate,400,1,1,0,60,High,Moderate,Indoor,Any,Wrist/shoulder issues,Focus on technique,Controlled,"Maintain guard; rotate hips for power","Cardiovascular fitness, upper body strength, stress relief",9,7,9,4,8,No,No,No,Pitta,All Seasons
++E082,Rowing,Cardio,Full Body,None,Rowing Machine,Beginner to Advanced,350,1,1,0,30,Moderate to High,Low,Both,Any,Back issues,Lower resistance,Controlled,"Drive with legs first; maintain straight back","Full body workout, cardiovascular fitness, low impact",8,7,9,5,6,Yes,No,No,Kapha-Pitta,All Seasons
++E083,Skiing,Cardio,Legs,Core,Ski Equipment,Intermediate to Advanced,400,1,1,0,120,Moderate to High,Moderate,Outdoor,Morning,Knee issues,Easier slopes,Controlled,"Bend knees; weight centered","Leg strength, balance, cardiovascular fitness",8,6,8,5,7,No,No,No,Vata,Winter
++E084,Snowboarding,Balance,Legs,Core,Snowboard Equipment,Intermediate to Advanced,400,1,1,0,120,Moderate to High,Moderate to High,Outdoor,Morning,Ankle/knee issues,Easier slopes,Controlled,"Bend knees; look where you want to go","Leg strength, balance, core stability",8,6,7,5,7,No,No,No,Vata,Winter
++E085,Ice Skating,Balance,Legs,Core,Ice Skates,Beginner to Advanced,300,1,1,0,60,Moderate,Moderate,Indoor,Any,Ankle issues,Recreational pace,Controlled,"Bend knees slightly; look ahead","Leg strength, balance, coordination",7,5,7,6,7,Yes,No,No,Vata,Winter
++E086,Rollerblading,Cardio,Legs,Core,Rollerblades,Beginner to Advanced,350,1,1,0,60,Moderate to High,Moderate,Outdoor,Evening,Joint issues,Slower pace,Controlled,"Bend knees; maintain balanced stance","Leg strength, balance, cardiovascular fitness",8,5,8,5,7,Yes,No,No,Vata,Avoid Rainy Season
++E087,Skateboarding,Balance,Legs,Core,Skateboard,Intermediate to Advanced,300,1,1,0,60,Moderate to High,High,Outdoor,Evening,Joint issues,Cruising vs. tricks,Controlled,"Bend knees; stay balanced over board","Balance, coordination, leg strength",7,5,6,5,7,No,No,No,Vata,Avoid Rainy Season
++E088,Surfing,Balance,Full Body,None,Surfboard,Intermediate to Advanced,300,1,1,0,60,Moderate to High,Moderate,Outdoor,Morning,None,Beginner boards,Controlled,"Paddle with cupped hands; pop up quickly","Balance, core strength, upper body endurance",7,6,7,6,9,No,No,No,Vata-Pitta,Summer
++E089,Swimming Laps,Cardio,Full Body,None,None,Beginner to Advanced,350,1,1,0,30,Moderate to High,Low,Indoor,Any,Ear infections,Water walking,Controlled,"Maintain proper form for each stroke","Full body workout, cardiovascular fitness, no impact",8,6,9,7,7,Yes,Yes,Yes,Kapha-Pitta,All Seasons
++E090,Water Aerobics,Cardio,Full Body,None,Pool,Beginner,200,1,1,0,45,Moderate,Low,Indoor,Any,None,Adjust depth,Normal,"Use water resistance; maintain form","Low impact, full body workout, joint-friendly",6,4,7,5,7,Yes,Yes,Yes,Tridoshic,All Seasons
++E091,Deep Water Running,Cardio,Legs,Core,Pool,Beginner to Intermediate,250,1,1,0,30,Moderate,Low,Indoor,Any,None,Use flotation belt,Normal,"Maintain upright posture; pump arms","No-impact cardiovascular workout, recovery",7,3,8,3,6,Yes,Yes,Yes,Vata-Kapha,All Seasons
++E092,Gardening,Functional,Full Body,None,Gardening Tools,Beginner,200,1,1,0,60,Low to Moderate,Low,Outdoor,Morning/Evening,Back issues,Use ergonomic tools,Normal,"Bend at knees; avoid prolonged positions","Light activity, stress relief, connection with nature",5,3,4,4,9,Yes,Yes,Yes,Kapha,Avoid Summer Noon
++E093,Housework,Functional,Full Body,None,None,Beginner,150,1,1,0,60,Low to Moderate,Low,Indoor,Any,None,Break into shorter sessions,Normal,"Use proper lifting technique; alternate tasks","Light activity, practical exercise",4,2,3,3,5,Yes,Yes,Yes,Kapha,All Seasons
++E094,Stair Climbing (Daily Activity),Functional,Legs,None,Stairs,Beginner,100,1,1,0,10,Moderate,Moderate,Indoor,Any,Knee issues,One step at a time,Normal,"Use handrail if needed; maintain posture","Leg strength, cardiovascular health, practical exercise",5,3,5,2,3,Yes,No,No,Kapha,All Seasons
++E095,Walking Meetings,Functional,Legs,None,None,Beginner,100,1,1,0,30,Low,Low,Both,Any,None,Adjust pace,Normal,"Walk at comfortable pace; stay aware of surroundings","Light activity, productivity, stress management",4,1,4,2,6,Yes,Yes,Yes,Vata,Avoid Extreme Weather
++E096,Standing Desk Work,Functional,Core,None,Standing Desk,Beginner,50,1,1,0,240,Low,Low,Indoor,Any,Back issues,Alternate sitting/standing,Normal,"Maintain good posture; use anti-fatigue mat","Improved posture, light calorie burn, reduced sitting time",2,1,1,2,4,Yes,Yes,No,Kapha,All Seasons
++E097,Balance Ball Sitting,Functional,Core,None,Balance Ball,Beginner,40,1,1,0,240,Low,Low,Indoor,Any,Back issues,Use for short periods,Normal,"Maintain good posture; feet flat on floor","Core engagement, posture improvement, light activity",2,2,1,3,3,Yes,No,No,Vata,All Seasons
++E098,Desk Stretches,Flexibility,Full Body,None,None,Beginner,30,1,1,0,10,Low,Low,Indoor,Any,None,Modify range of motion,Deep and slow,"Hold each stretch 15-30 seconds; breathe deeply","Flexibility, stress reduction, improved circulation",1,1,1,7,7,Yes,Yes,Yes,Vata,All Seasons
++E099,Breathing Exercises,Mind-Body,None,None,None,Beginner,20,1,1,0,10,Low,Low,Indoor,Any,None,Shorter sessions,Specific to technique,"Sit comfortably; don't force breath","Stress reduction, mental clarity, improved focus",1,1,1,1,9,Yes,Yes,Yes,Tridoshic,All Seasons
++E100,Progressive Muscle Relaxation,Mind-Body,None,None,None,Beginner,15,1,1,0,15,Low,Low,Indoor,Evening,None,Shorter sessions,Deep and slow,"Tense each muscle group 5-10 seconds; release fully","Stress reduction, body awareness, improved sleep",1,1,1,2,10,Yes,Yes,Yes,Vata,All Seasons
+
+--- weight_loss_tracking.csv
++++ weight_loss_tracking.csv
+@@ -0,0 +1,101 @@
++User_ID,Date,Day_Number,Starting_Weight_kg,Current_Weight_kg,Weight_Change_kg,BMI,Body_Fat_Percentage,Waist_Circumference_cm,Hip_Circumference_cm,Waist_Hip_Ratio,Calories_Consumed,Protein_g,Carbs_g,Fat_g,Fiber_g,Water_Consumed_L,Sleep_Hours,Sleep_Quality,Stress_Level,Energy_Level,Hunger_Level,Mood,Exercise_Duration_min,Exercise_Type,Steps_Count,Active_Minutes,Resting_Heart_Rate,Morning_Meditation,Meal_Compliance,Fasting_Hours,Menstrual_Cycle_Phase,Weather_Conditions,Travel_Status,Illness_Status,Alcohol_Consumption,Supplement_Intake,Cheat_Meal,Notes
++U001,2023-01-01,1,78.5,78.5,0.0,28.7,32.5,96.5,105.2,0.92,1850,85,210,62,22,2.2,7.0,7,6,6,7,Neutral,30,Walking,6500,45,72,No,High,12,Not Applicable,Cold,No,No,No,Multivitamin,No,Starting the weight loss journey today. Feeling motivated but a bit anxious.
++U001,2023-01-02,2,78.5,78.3,-0.2,28.6,32.5,96.5,105.2,0.92,1820,90,200,60,25,2.5,7.5,8,5,7,6,Positive,45,Yoga,7200,60,71,Yes,High,12,Not Applicable,Cold,No,No,No,Multivitamin,No,Feeling good about the small progress. Yoga was relaxing.
++U001,2023-01-03,3,78.3,78.2,-0.1,28.6,32.4,96.3,105.0,0.92,1790,95,195,58,28,2.8,7.0,6,7,6,7,Neutral,30,Walking,6800,50,72,No,Medium,12,Not Applicable,Cold,No,No,No,Multivitamin,No,Busy day at work. Struggled with afternoon snacking.
++U001,2023-01-04,4,78.2,78.0,-0.2,28.5,32.3,96.0,104.8,0.92,1800,92,205,55,26,3.0,8.0,8,4,8,5,Positive,60,Strength Training,8500,75,70,Yes,High,12,Not Applicable,Cold,No,No,No,Multivitamin,No,Great workout today. Feeling stronger and more energetic.
++U001,2023-01-05,5,78.0,77.9,-0.1,28.5,32.2,95.8,104.5,0.92,1830,88,210,60,24,2.7,7.5,7,5,7,6,Positive,45,Cycling,7500,65,71,No,High,12,Not Applicable,Cold,No,No,No,Multivitamin,No,Enjoyed cycling today. Noticing clothes fitting slightly better.
++U001,2023-01-06,6,77.9,77.8,-0.1,28.4,32.1,95.5,104.3,0.92,1900,85,220,65,22,2.5,6.5,6,6,6,8,Neutral,30,Walking,6000,40,72,No,Medium,12,Not Applicable,Cold,No,No,Yes,Multivitamin,Yes,Had dinner with friends. Chose healthier options but had one glass of wine.
++U001,2023-01-07,7,77.8,77.7,-0.1,28.4,32.0,95.3,104.0,0.92,1750,90,190,58,27,3.2,8.5,9,3,8,5,Positive,75,HIIT,9200,90,69,Yes,High,14,Not Applicable,Cold,No,No,No,Multivitamin,No,Great first week! HIIT was challenging but felt accomplished after.
++U001,2023-01-08,8,77.7,77.5,-0.2,28.3,31.9,95.0,103.8,0.92,1780,95,195,55,29,3.0,8.0,8,4,8,6,Positive,60,Yoga,7800,70,70,Yes,High,12,Not Applicable,Cold,No,No,No,Multivitamin,No,Focused on mindful eating today. Yoga helped with stress.
++U001,2023-01-09,9,77.5,77.4,-0.1,28.3,31.8,94.8,103.5,0.92,1820,92,200,60,26,2.8,7.0,7,5,7,7,Neutral,45,Walking,7500,60,71,No,Medium,12,Not Applicable,Cold,No,No,No,Multivitamin,No,Busy workday. Managed to get a walk in during lunch break.
++U001,2023-01-10,10,77.4,77.3,-0.1,28.2,31.7,94.5,103.3,0.91,1800,94,195,58,28,3.0,7.5,8,4,7,6,Positive,50,Strength Training,8000,65,70,No,High,12,Not Applicable,Cold,No,No,No,Multivitamin,No,Feeling stronger in my workouts. Increased weights slightly.
++U002,2023-01-01,1,65.2,65.2,0.0,24.8,28.5,82.3,95.6,0.86,1650,75,185,55,20,2.0,6.5,6,7,6,8,Neutral,20,Walking,5500,35,75,No,Medium,10,Follicular,Cold,No,No,No,None,No,Starting my weight loss journey. Feeling a bit overwhelmed but determined.
++U002,2023-01-02,2,65.2,65.0,-0.2,24.7,28.5,82.3,95.6,0.86,1620,80,180,52,22,2.3,7.0,7,6,7,7,Positive,30,Yoga,6200,45,74,Yes,High,10,Follicular,Cold,No,No,No,None,No,Enjoyed the yoga session. Feeling more relaxed and focused.
++U002,2023-01-03,3,65.0,64.9,-0.1,24.7,28.4,82.0,95.4,0.86,1600,82,175,50,24,2.5,7.0,7,6,7,6,Positive,35,Walking,6500,50,74,No,High,10,Follicular,Cold,No,No,No,None,No,Made healthy food choices today. Proud of myself.
++U002,2023-01-04,4,64.9,64.8,-0.1,24.6,28.3,81.8,95.2,0.86,1630,80,180,53,23,2.2,6.0,5,8,5,8,Negative,20,Light Stretching,4800,30,76,No,Medium,10,Follicular,Cold,No,Yes,No,None,No,Feeling a bit under the weather. Took it easy today.
++U002,2023-01-05,5,64.8,64.7,-0.1,24.6,28.2,81.5,95.0,0.86,1580,78,170,55,21,2.0,7.5,8,5,6,7,Neutral,25,Walking,5500,35,75,No,Medium,10,Follicular,Cold,No,Yes,No,None,No,Still recovering but feeling better. Kept meals simple.
++U002,2023-01-06,6,64.7,64.6,-0.1,24.5,28.1,81.3,94.8,0.86,1650,85,175,55,25,2.7,8.0,8,4,8,6,Positive,40,Yoga,6800,55,73,Yes,High,10,Follicular,Cold,No,No,No,None,No,Back to normal routine. Yoga felt great after being sick.
++U002,2023-01-07,7,64.6,64.5,-0.1,24.5,28.0,81.0,94.5,0.86,1700,80,190,58,22,2.5,7.5,7,5,7,7,Positive,45,Swimming,7000,60,72,No,Medium,10,Ovulation,Cold,No,No,No,None,Yes,Went out for lunch but made healthy choices. Swimming was refreshing.
++U002,2023-01-08,8,64.5,64.3,-0.2,24.4,27.9,80.8,94.3,0.86,1620,85,175,52,26,2.8,7.0,7,5,7,6,Positive,50,Pilates,7200,65,72,Yes,High,12,Ovulation,Cold,No,No,No,None,No,First Pilates class. Challenging but enjoyable.
++U002,2023-01-09,9,64.3,64.2,-0.1,24.4,27.8,80.5,94.0,0.86,1640,82,180,54,24,2.5,6.5,6,6,6,7,Neutral,30,Walking,6000,40,73,No,Medium,10,Ovulation,Cold,No,No,No,None,No,Busy day at work. Managed to prepare healthy meals in advance.
++U002,2023-01-10,10,64.2,64.1,-0.1,24.3,27.7,80.3,93.8,0.86,1660,84,185,52,25,2.6,7.0,7,5,7,6,Positive,40,Strength Training,6500,50,72,No,High,10,Ovulation,Cold,No,No,No,None,No,Tried some light strength training. Feeling stronger already.
++U003,2023-01-01,1,92.3,92.3,0.0,32.5,38.2,105.6,112.3,0.94,2100,90,240,70,18,1.8,6.0,5,8,5,9,Negative,15,Walking,4500,25,78,No,Low,8,Not Applicable,Cold,No,No,Yes,None,Yes,Starting point. Feeling discouraged about my weight but committed to change.
++U003,2023-01-02,2,92.3,92.1,-0.2,32.4,38.2,105.6,112.3,0.94,1950,95,220,65,20,2.0,6.5,6,7,6,8,Neutral,20,Walking,5000,30,77,No,Medium,8,Not Applicable,Cold,No,No,No,None,No,Cut back on portion sizes today. Feeling a bit hungry but managing.
++U003,2023-01-03,3,92.1,92.0,-0.1,32.4,38.1,105.4,112.1,0.94,1900,100,210,62,22,2.2,6.5,6,7,6,8,Neutral,25,Walking,5500,35,77,No,Medium,9,Not Applicable,Cold,No,No,No,None,No,Slightly more energy today. Added an extra 5 minutes to my walk.
++U003,2023-01-04,4,92.0,91.8,-0.2,32.3,38.0,105.1,111.9,0.94,1850,105,200,60,25,2.5,7.0,7,6,7,7,Positive,30,Walking,6000,40,76,No,High,9,Not Applicable,Cold,No,No,No,Multivitamin,No,Started taking a multivitamin. Feeling more energetic.
++U003,2023-01-05,5,91.8,91.7,-0.1,32.3,37.9,104.9,111.7,0.94,1880,100,205,62,23,2.3,6.5,6,7,6,8,Neutral,25,Walking,5500,35,76,No,Medium,9,Not Applicable,Cold,No,No,No,Multivitamin,No,Stressful day at work. Managed not to stress eat.
++U003,2023-01-06,6,91.7,91.6,-0.1,32.2,37.8,104.7,111.5,0.94,1950,95,220,65,20,2.0,6.0,5,8,5,9,Negative,20,Walking,5000,30,77,No,Low,8,Not Applicable,Cold,No,No,Yes,Multivitamin,Yes,Weekend gathering. Had some cake but kept portions reasonable.
++U003,2023-01-07,7,91.6,91.5,-0.1,32.2,37.7,104.5,111.3,0.94,1850,100,205,60,24,2.4,7.0,7,6,6,7,Neutral,30,Walking,6000,40,76,No,Medium,9,Not Applicable,Cold,No,No,No,Multivitamin,No,Back on track after yesterday. Meal prepped for the week.
++U003,2023-01-08,8,91.5,91.3,-0.2,32.1,37.6,104.2,111.0,0.94,1800,110,195,58,27,2.7,7.5,8,5,7,6,Positive,35,Walking + Light Strength,6500,45,75,No,High,10,Not Applicable,Cold,No,No,No,Multivitamin,No,Added some light strength exercises to my walking routine. Feeling good.
++U003,2023-01-09,9,91.3,91.2,-0.1,32.1,37.5,104.0,110.8,0.94,1820,105,200,60,25,2.5,7.0,7,6,7,7,Positive,30,Walking,6000,40,75,No,High,9,Not Applicable,Cold,No,No,No,Multivitamin,No,Noticing clothes fitting slightly better. Motivating!
++U003,2023-01-10,10,91.2,91.0,-0.2,32.0,37.4,103.7,110.5,0.94,1780,110,190,58,28,2.8,7.5,8,5,8,6,Positive,40,Walking + Light Strength,7000,50,74,Yes,High,10,Not Applicable,Cold,No,No,No,Multivitamin,No,Tried meditation for the first time. Feeling proud of my progress so far.
++U004,2023-01-01,1,58.6,58.6,0.0,21.5,24.3,72.5,88.2,0.82,1550,65,180,50,18,1.8,7.0,7,6,7,7,Neutral,40,Yoga,7000,55,68,Yes,Medium,12,Luteal,Cold,No,No,No,None,No,Starting my journey to tone up and build strength rather than lose weight.
++U004,2023-01-02,2,58.6,58.5,-0.1,21.5,24.2,72.5,88.2,0.82,1580,70,175,52,20,2.0,7.5,8,5,8,6,Positive,45,Running,8000,60,67,No,High,12,Luteal,Cold,No,No,No,None,No,Great run today. Focusing on building endurance.
++U004,2023-01-03,3,58.5,58.4,-0.1,21.4,24.1,72.3,88.0,0.82,1600,75,170,55,22,2.2,7.0,7,6,7,7,Positive,50,Strength Training,7500,65,68,No,High,12,Luteal,Cold,No,No,No,Protein Powder,No,Started using protein powder after workouts. Feeling stronger.
++U004,2023-01-04,4,58.4,58.3,-0.1,21.4,24.0,72.1,87.8,0.82,1620,80,165,58,21,2.1,6.5,6,7,6,8,Neutral,30,Yoga,6500,45,69,Yes,Medium,12,Luteal,Cold,No,No,No,Protein Powder,No,Recovery day with yoga. Muscles feeling a bit sore.
++U004,2023-01-05,5,58.3,58.2,-0.1,21.4,23.9,72.0,87.6,0.82,1590,75,170,55,23,2.3,7.0,7,6,7,7,Positive,55,Running,8500,70,67,No,High,12,Menstrual,Cold,No,No,No,Protein Powder,No,Pushed myself on my run today. Feeling accomplished.
++U004,2023-01-06,6,58.2,58.3,0.1,21.4,23.9,72.0,87.6,0.82,1650,70,185,55,19,1.9,6.5,6,8,5,8,Negative,25,Light Walking,5500,35,70,No,Low,10,Menstrual,Cold,No,No,Yes,None,Yes,Period started. Feeling bloated and low energy. Had some chocolate.
++U004,2023-01-07,7,58.3,58.2,-0.1,21.4,23.9,72.0,87.6,0.82,1580,65,180,52,20,2.0,7.5,8,6,6,7,Neutral,30,Yoga,6000,40,69,Yes,Medium,12,Menstrual,Cold,No,No,No,Iron Supplement,No,Gentle yoga today. Taking iron supplement for period.
++U004,2023-01-08,8,58.2,58.1,-0.1,21.3,23.8,71.8,87.4,0.82,1600,70,175,54,22,2.2,8.0,8,5,7,6,Positive,40,Light Strength Training,7000,50,68,No,High,12,Menstrual,Cold,No,No,No,Iron Supplement,No,Feeling better today. Modified workout but still productive.
++U004,2023-01-09,9,58.1,58.0,-0.1,21.3,23.7,71.6,87.2,0.82,1620,75,170,56,24,2.4,7.5,8,5,8,6,Positive,60,Running,8500,75,66,No,High,12,Menstrual,Cold,No,No,No,Iron Supplement,No,Energy levels back to normal. Great run today.
++U004,2023-01-10,10,58.0,57.9,-0.1,21.2,23.6,71.4,87.0,0.82,1650,80,165,58,25,2.5,7.0,7,6,8,7,Positive,65,Strength Training,8000,80,67,No,High,12,Menstrual,Cold,No,No,No,Protein Powder,No,Increased weights in my strength training. Feeling stronger each day.
++U005,2023-01-01,1,85.4,85.4,0.0,29.6,34.8,98.7,108.5,0.91,1950,80,230,65,16,1.6,6.0,5,8,5,9,Negative,0,None,3500,20,80,No,Low,8,Not Applicable,Cold,No,No,Yes,None,Yes,Starting point. Haven't exercised in years. Feeling overwhelmed.
++U005,2023-01-02,2,85.4,85.3,-0.1,29.5,34.8,98.7,108.5,0.91,1850,85,215,60,18,1.8,6.5,6,7,6,8,Neutral,10,Walking,4000,25,79,No,Medium,8,Not Applicable,Cold,No,No,No,None,No,First day trying to walk more. Only managed 10 minutes but it's a start.
++U005,2023-01-03,3,85.3,85.2,-0.1,29.5,34.7,98.5,108.3,0.91,1800,90,205,58,20,2.0,6.5,6,7,6,8,Neutral,15,Walking,4500,30,79,No,Medium,9,Not Applicable,Cold,No,No,No,None,No,Added 5 more minutes to my walk. Legs are sore but feeling determined.
++U005,2023-01-04,4,85.2,85.1,-0.1,29.5,34.6,98.3,108.1,0.91,1780,95,200,55,22,2.2,7.0,7,6,7,7,Positive,15,Walking,4500,30,78,No,High,9,Not Applicable,Cold,No,No,No,None,No,Same walking time but feeling less winded today.
++U005,2023-01-05,5,85.1,85.0,-0.1,29.4,34.5,98.1,107.9,0.91,1820,90,210,58,20,2.0,6.5,6,7,6,8,Neutral,20,Walking,5000,35,78,No,Medium,9,Not Applicable,Cold,No,No,No,None,No,Added 5 more minutes to my walk. Proud of my consistency.
++U005,2023-01-06,6,85.0,84.9,-0.1,29.4,34.4,97.9,107.7,0.91,1900,85,225,62,18,1.8,6.0,5,8,5,9,Negative,0,None,3000,15,80,No,Low,8,Not Applicable,Cold,No,No,Yes,None,Yes,Weekend family gathering. Didn't exercise and ate more than planned.
++U005,2023-01-07,7,84.9,84.8,-0.1,29.4,34.3,97.7,107.5,0.91,1800,90,205,58,21,2.1,6.5,6,7,6,8,Neutral,20,Walking,5000,35,79,No,Medium,9,Not Applicable,Cold,No,No,No,None,No,Back on track with walking. Feeling less guilty about yesterday.
++U005,2023-01-08,8,84.8,84.6,-0.2,29.3,34.2,97.4,107.2,0.91,1750,95,195,55,24,2.4,7.0,7,6,7,7,Positive,25,Walking,5500,40,77,No,High,10,Not Applicable,Cold,No,No,No,Multivitamin,No,Started taking a multivitamin. Added 5 more minutes to my walk.
++U005,2023-01-09,9,84.6,84.5,-0.1,29.3,34.1,97.2,107.0,0.91,1780,90,200,58,22,2.2,7.0,7,6,7,7,Positive,25,Walking,5500,40,77,No,High,9,Not Applicable,Cold,No,No,No,Multivitamin,No,Maintained walking time but increased pace slightly.
++U005,2023-01-10,10,84.5,84.3,-0.2,29.2,34.0,96.9,106.7,0.91,1730,100,190,55,26,2.6,7.5,8,5,8,6,Positive,30,Walking,6000,45,76,No,High,10,Not Applicable,Cold,No,No,No,Multivitamin,No,Reached 30 minutes of walking! Huge milestone for me. Feeling proud.
++U006,2023-01-01,1,72.8,72.8,0.0,26.7,30.2,88.4,98.6,0.90,1800,75,210,60,19,1.9,6.5,6,7,6,8,Neutral,30,Cycling,6000,40,74,No,Medium,10,Not Applicable,Cold,Yes,No,No,None,No,Starting my journey while on a business trip. Hotel has a gym which helps.
++U006,2023-01-02,2,72.8,72.7,-0.1,26.7,30.2,88.4,98.6,0.90,1750,80,200,58,20,2.0,6.0,5,8,5,8,Negative,20,Treadmill,5000,30,75,No,Medium,10,Not Applicable,Cold,Yes,No,Yes,None,No,Business dinner tonight. Chose grilled fish but had a glass of wine.
++U006,2023-01-03,3,72.7,72.6,-0.1,26.6,30.1,88.2,98.4,0.90,1720,85,195,55,22,2.2,6.5,6,7,6,7,Neutral,35,Hotel Gym,6500,45,74,No,Medium,10,Not Applicable,Cold,Yes,No,No,None,No,Used hotel gym equipment. Challenging to eat healthy while traveling.
++U006,2023-01-04,4,72.6,72.5,-0.1,26.6,30.0,88.0,98.2,0.90,1780,80,205,58,20,2.0,6.0,5,8,5,8,Neutral,25,Treadmill,5500,35,74,No,Medium,10,Not Applicable,Cold,Yes,No,No,None,No,Last day of business trip. Airport food challenges.
++U006,2023-01-05,5,72.5,72.4,-0.1,26.5,29.9,87.8,98.0,0.90,1700,85,190,55,24,2.4,7.5,8,5,7,6,Positive,45,Home Workout,7000,60,72,No,High,12,Not Applicable,Cold,No,No,No,None,No,Back home. Good to be in my routine again with home-cooked meals.
++U006,2023-01-06,6,72.4,72.3,-0.1,26.5,29.8,87.6,97.8,0.90,1750,90,195,52,26,2.6,8.0,8,4,8,5,Positive,60,Running,8000,75,71,No,High,12,Not Applicable,Cold,No,No,No,None,No,Weekend run in the park. Feeling energized and motivated.
++U006,2023-01-07,7,72.3,72.2,-0.1,26.5,29.7,87.4,97.6,0.90,1820,85,205,58,23,2.3,7.5,7,5,7,7,Positive,40,Yoga,6500,50,72,Yes,Medium,12,Not Applicable,Cold,No,No,No,None,No,Recovery day with yoga. Meal prepped for the week ahead.
++U006,2023-01-08,8,72.2,72.0,-0.2,26.4,29.6,87.1,97.3,0.90,1700,90,185,55,27,2.7,7.0,7,6,7,6,Positive,50,Strength Training,7500,65,71,No,High,12,Not Applicable,Cold,No,No,No,Protein Powder,No,Started using protein powder after workouts. Good strength session.
++U006,2023-01-09,9,72.0,71.9,-0.1,26.4,29.5,86.9,97.1,0.89,1720,95,180,58,25,2.5,7.5,8,5,8,6,Positive,45,Cycling,7000,60,71,No,High,12,Not Applicable,Cold,No,No,No,Protein Powder,No,Energetic cycling session. Feeling stronger each day.
++U006,2023-01-10,10,71.9,71.7,-0.2,26.3,29.4,86.6,96.8,0.89,1680,100,175,55,28,2.8,8.0,8,4,9,5,Positive,65,HIIT,8500,80,70,No,High,14,Not Applicable,Cold,No,No,No,Protein Powder,No,Tried HIIT for the first time. Challenging but exhilarating!
++U007,2023-01-01,1,68.5,68.5,0.0,25.1,29.5,84.2,94.5,0.89,1750,70,205,58,17,1.7,6.0,6,7,6,8,Neutral,25,Walking,5500,35,76,No,Medium,10,Follicular,Cold,No,No,No,None,No,Starting my journey. Focusing on sustainable changes rather than quick results.
++U007,2023-01-02,2,68.5,68.4,-0.1,25.1,29.5,84.2,94.5,0.89,1720,75,200,55,19,1.9,6.5,7,6,7,7,Positive,30,Yoga,6000,40,75,Yes,Medium,10,Follicular,Cold,No,No,No,None,No,Morning yoga helped start the day positively. Feeling more mindful about eating.
++U007,2023-01-03,3,68.4,68.3,-0.1,25.0,29.4,84.0,94.3,0.89,1700,80,195,52,22,2.2,7.0,7,6,7,7,Positive,35,Walking,6500,45,75,No,High,10,Follicular,Cold,No,No,No,None,No,Increased walking time. Focusing on drinking more water throughout the day.
++U007,2023-01-04,4,68.3,68.2,-0.1,25.0,29.3,83.8,94.1,0.89,1730,75,200,55,20,2.0,6.5,6,7,6,8,Neutral,30,Pilates,6000,40,75,No,Medium,10,Follicular,Cold,No,No,No,None,No,First Pilates class. Challenging but enjoyed the focus on core strength.
++U007,2023-01-05,5,68.2,68.1,-0.1,25.0,29.2,83.6,93.9,0.89,1700,80,195,52,23,2.3,7.0,7,6,7,7,Positive,40,Walking,7000,50,74,No,High,10,Follicular,Cold,No,No,No,None,No,Longer walk today. Noticing improved energy throughout the day.
++U007,2023-01-06,6,68.1,68.0,-0.1,24.9,29.1,83.4,93.7,0.89,1780,75,210,58,19,1.9,6.5,6,7,6,8,Neutral,25,Yoga,5500,35,75,Yes,Medium,10,Ovulation,Cold,No,No,Yes,None,Yes,Weekend brunch with friends. Chose healthier options but had a mimosa.
++U007,2023-01-07,7,68.0,67.9,-0.1,24.9,29.0,83.2,93.5,0.89,1690,85,190,52,24,2.4,7.5,8,5,8,6,Positive,45,Dancing,7500,60,73,No,High,12,Ovulation,Cold,No,No,No,None,No,Tried a dance fitness class. So much fun and didn't feel like exercise!
++U007,2023-01-08,8,67.9,67.7,-0.2,24.8,28.9,82.9,93.2,0.89,1670,90,185,50,26,2.6,7.0,7,6,7,7,Positive,50,Strength Training,7000,65,73,No,High,10,Ovulation,Cold,No,No,No,None,No,First time trying strength training. Started with light weights.
++U007,2023-01-09,9,67.7,67.6,-0.1,24.8,28.8,82.7,93.0,0.89,1700,85,190,55,24,2.4,6.5,6,7,6,8,Neutral,35,Walking,6500,45,74,No,Medium,10,Ovulation,Cold,No,No,No,None,No,Busy workday. Managed to get a walk in during lunch break.
++U007,2023-01-10,10,67.6,67.5,-0.1,24.7,28.7,82.5,92.8,0.89,1650,90,180,52,27,2.7,7.5,8,5,8,6,Positive,55,Pilates,7500,70,72,Yes,High,12,Luteal,Cold,No,No,No,None,No,Second Pilates class. Already feeling improvement in core strength.
++U008,2023-01-01,1,95.6,95.6,0.0,33.1,39.5,108.3,115.6,0.94,2200,85,260,75,15,1.5,5.5,5,9,4,10,Negative,0,None,3000,15,82,No,Low,8,Not Applicable,Cold,No,Yes,Yes,None,Yes,Starting point. Feeling very discouraged but doctor advised weight loss for health.
++U008,2023-01-02,2,95.6,95.5,-0.1,33.1,39.5,108.3,115.6,0.94,2000,90,235,70,17,1.7,6.0,6,8,5,9,Negative,10,Light Walking,3500,20,81,No,Medium,8,Not Applicable,Cold,No,Yes,No,None,No,Still recovering from cold but tried a short walk. Reduced portions today.
++U008,2023-01-03,3,95.5,95.4,-0.1,33.0,39.4,108.1,115.4,0.94,1950,95,225,65,19,1.9,6.0,6,8,5,9,Negative,15,Light Walking,4000,25,81,No,Medium,8,Not Applicable,Cold,No,Yes,No,None,No,Cold improving. Managed a slightly longer walk today.
++U008,2023-01-04,4,95.4,95.2,-0.2,33.0,39.3,107.8,115.1,0.94,1900,100,215,62,22,2.2,6.5,6,7,6,8,Neutral,20,Walking,4500,30,80,No,Medium,9,Not Applicable,Cold,No,No,No,None,No,Feeling better today. More energy and less congestion.
++U008,2023-01-05,5,95.2,95.1,-0.1,32.9,39.2,107.6,114.9,0.94,1850,105,205,60,24,2.4,7.0,7,6,7,7,Positive,25,Walking,5000,35,79,No,High,9,Not Applicable,Cold,No,No,No,None,No,First day feeling truly healthy again. Longer walk and better food choices.
++U008,2023-01-06,6,95.1,95.0,-0.1,32.9,39.1,107.4,114.7,0.94,1920,100,220,63,21,2.1,6.5,6,7,6,8,Neutral,20,Walking,4500,30,80,No,Medium,9,Not Applicable,Cold,No,No,No,None,No,Weekend errands. Got some walking in while shopping.
++U008,2023-01-07,7,95.0,94.9,-0.1,32.9,39.0,107.2,114.5,0.94,1880,105,210,62,23,2.3,7.0,7,6,7,7,Positive,30,Walking,5500,40,79,No,High,9,Not Applicable,Cold,No,No,No,None,No,Longest walk yet. Feeling proud of my consistency despite the cold.
++U008,2023-01-08,8,94.9,94.7,-0.2,32.8,38.9,106.9,114.2,0.94,1820,110,200,58,26,2.6,7.5,8,5,8,6,Positive,35,Walking,6000,45,78,No,High,10,Not Applicable,Cold,No,No,No,Multivitamin,No,Started taking a multivitamin. Feeling more energetic.
++U008,2023-01-09,9,94.7,94.6,-0.1,32.8,38.8,106.7,114.0,0.94,1850,105,205,60,24,2.4,7.0,7,6,7,7,Positive,35,Walking,6000,45,78,No,High,9,Not Applicable,Cold,No,No,No,Multivitamin,No,Maintained walking time but increased pace slightly.
++U008,2023-01-10,10,94.6,94.4,-0.2,32.7,38.7,106.4,113.7,0.94,1800,115,195,55,28,2.8,8.0,8,4,8,6,Positive,40,Walking,6500,50,77,Yes,High,10,Not Applicable,Cold,No,No,No,Multivitamin,No,Tried meditation for the first time. Feeling less stressed about my journey.
++U009,2023-01-01,1,62.3,62.3,0.0,22.9,26.5,76.8,90.4,0.85,1600,70,185,52,18,1.8,7.0,7,6,7,7,Neutral,45,Yoga,7500,60,70,Yes,Medium,12,Not Applicable,Cold,No,No,No,None,No,Starting my fitness journey. More focused on toning and strength than weight loss.
++U009,2023-01-02,2,62.3,62.2,-0.1,22.8,26.4,76.8,90.4,0.85,1630,75,180,55,20,2.0,7.5,8,5,8,6,Positive,50,Running,8000,65,69,No,High,12,Not Applicable,Cold,No,No,No,None,No,Morning run felt great. Focusing on building endurance.
++U009,2023-01-03,3,62.2,62.1,-0.1,22.8,26.3,76.6,90.2,0.85,1650,80,175,58,22,2.2,7.0,7,6,7,7,Positive,60,Strength Training,7500,75,70,No,High,12,Not Applicable,Cold,No,No,No,Protein Powder,No,First time using protein powder. Good strength session.
++U009,2023-01-04,4,62.1,62.0,-0.1,22.8,26.2,76.4,90.0,0.85,1620,75,180,55,21,2.1,6.5,6,7,6,8,Neutral,40,Yoga,7000,50,70,Yes,Medium,12,Not Applicable,Cold,No,No,No,Protein Powder,No,Recovery day with yoga. Muscles feeling a bit sore.
++U009,2023-01-05,5,62.0,61.9,-0.1,22.7,26.1,76.2,89.8,0.85,1670,85,170,60,23,2.3,7.5,8,5,8,6,Positive,55,HIIT,8500,70,68,No,High,12,Not Applicable,Cold,No,No,No,Protein Powder,No,First HIIT class. Challenging but exhilarating!
++U009,2023-01-06,6,61.9,61.8,-0.1,22.7,26.0,76.0,89.6,0.85,1700,80,185,58,20,2.0,7.0,7,6,7,7,Positive,65,Running,9000,80,68,No,High,12,Not Applicable,Cold,No,No,No,Protein Powder,No,Weekend long run. Increased distance and felt strong.
++U009,2023-01-07,7,61.8,61.7,-0.1,22.7,25.9,75.8,89.4,0.85,1650,75,180,55,22,2.2,8.0,8,4,7,6,Positive,45,Yoga,7500,55,69,Yes,Medium,12,Not Applicable,Cold,No,No,No,Protein Powder,No,Recovery yoga session. Focused on stretching tight muscles.
++U009,2023-01-08,8,61.7,61.5,-0.2,22.6,25.8,75.5,89.1,0.85,1620,90,165,58,25,2.5,7.5,8,5,8,6,Positive,70,Strength Training,8500,85,67,No,High,14,Not Applicable,Cold,No,No,No,Protein Powder,No,Increased weights in strength training. Feeling stronger.
++U009,2023-01-09,9,61.5,61.4,-0.1,22.5,25.7,75.3,88.9,0.85,1640,85,170,56,24,2.4,7.0,7,6,7,7,Positive,60,Cycling,8000,75,68,No,High,12,Not Applicable,Cold,No,No,No,Protein Powder,No,Tried a cycling class. Good cardio workout and fun.
++U009,2023-01-10,10,61.4,61.3,-0.1,22.5,25.6,75.1,88.7,0.85,1600,95,160,55,27,2.7,8.0,8,4,9,5,Positive,75,HIIT,9500,90,66,No,High,14,Not Applicable,Cold,No,No,No,Protein Powder,No,Second HIIT class. Already feeling improvement in endurance.
++U010,2023-01-01,1,81.2,81.2,0.0,28.1,33.6,94.5,104.8,0.90,1900,80,220,63,17,1.7,6.5,6,7,6,8,Neutral,20,Walking,5000,30,76,No,Medium,10,Not Applicable,Cold,No,No,No,None,No,Starting my journey. Feeling nervous but determined to make changes.
++U010,2023-01-02,2,81.2,81.1,-0.1,28.1,33.6,94.5,104.8,0.90,1850,85,210,60,19,1.9,7.0,7,6,7,7,Positive,25,Walking,5500,35,75,No,Medium,10,Not Applicable,Cold,No,No,No,None,No,Slightly longer walk today. Focusing on drinking more water.
++U010,2023-01-03,3,81.1,81.0,-0.1,28.0,33.5,94.3,104.6,0.90,1820,90,205,58,21,2.1,7.0,7,6,7,7,Positive,30,Walking,6000,40,75,No,High,10,Not Applicable,Cold,No,No,No,None,No,Added 5 more minutes to my walk. Feeling more energetic.
++U010,2023-01-04,4,81.0,80.9,-0.1,28.0,33.4,94.1,104.4,0.90,1850,85,210,60,20,2.0,6.5,6,7,6,8,Neutral,25,Walking,5500,35,75,No,Medium,10,Not Applicable,Cold,No,No,No,None,No,Busy day at work. Shorter walk but maintained healthy eating.
++U010,2023-01-05,5,80.9,80.8,-0.1,28.0,33.3,93.9,104.2,0.90,1800,90,200,58,23,2.3,7.5,8,5,7,6,Positive,35,Walking + Light Strength,6500,45,74,No,High,10,Not Applicable,Cold,No,No,No,None,No,Added some light strength exercises after my walk.
++U010,2023-01-06,6,80.8,80.7,-0.1,27.9,33.2,93.7,104.0,0.90,1880,85,215,62,19,1.9,6.5,6,7,6,8,Neutral,20,Walking,5000,30,75,No,Medium,10,Not Applicable,Cold,No,No,Yes,None,Yes,Weekend family dinner. Had a small dessert but otherwise stayed on track.
++U010,2023-01-07,7,80.7,80.6,-0.1,27.9,33.1,93.5,103.8,0.90,1820,90,205,58,22,2.2,7.0,7,6,7,7,Positive,40,Walking + Light Strength,7000,50,74,No,High,10,Not Applicable,Cold,No,No,No,None,No,Longer workout session today. Feeling proud of my consistency.
++U010,2023-01-08,8,80.6,80.4,-0.2,27.8,33.0,93.2,103.5,0.90,1780,95,195,55,25,2.5,7.5,8,5,8,6,Positive,45,Walking + Light Strength,7500,55,73,No,High,12,Not Applicable,Cold,No,No,No,Multivitamin,No,Started taking a multivitamin. Feeling more energetic.
++U010,2023-01-09,9,80.4,80.3,-0.1,27.8,32.9,93.0,103.3,0.90,1800,90,200,58,23,2.3,7.0,7,6,7,7,Positive,45,Walking + Light Strength,7500,55,73,No,High,10,Not Applicable,Cold,No,No,No,Multivitamin,No,Maintained workout routine. Consistent progress feels good.
++U010,2023-01-10,10,80.3,80.1,-0.2,27.7,32.8,92.7,103.0,0.90,1750,100,190,55,27,2.7,8.0,8,4,8,6,Positive,50,Walking + Light Strength,8000,60,72,Yes,High,12,Not Applicable,Cold,No,No,No,Multivitamin,No,Tried meditation for the first time. Feeling less stressed about my journey.
+
+--- indian_food_nutrition.csv
++++ indian_food_nutrition.csv
+@@ -0,0 +1,101 @@
++Food_ID,Food_Name,Food_Category,Region_Origin,Calories_per_100g,Protein_g,Carbs_g,Fat_g,Fiber_g,Glycemic_Index,Ayurvedic_Classification,Recommended_Meal_Time,Seasonal_Availability,Cooking_Method,Preparation_Time_min,Main_Ingredients,Health_Benefits,Contraindications,Portion_Size_g,Calories_per_Portion,Protein_per_Portion,Carbs_per_Portion,Fat_per_Portion,Nutrient_Density_Score,Weight_Loss_Friendly_Score
++IF001,Roti,Bread,North India,120,3.5,20.5,1.2,2.8,55,Sattvic,All Meals,All Year,Baking,15,"Whole Wheat Flour, Water","High in complex carbs, good source of fiber, sustained energy","Gluten sensitivity, celiac disease",30,36,1.1,6.2,0.4,75,8
++IF002,Naan,Bread,North India,260,9.0,48.0,3.3,2.1,75,Rajasic,Lunch/Dinner,All Year,Baking,20,"Refined Flour, Yogurt, Butter","Good source of protein, energy-dense","Gluten sensitivity, celiac disease, weight management",60,156,5.4,28.8,2.0,45,4
++IF003,Paratha,Bread,North India,330,7.5,45.0,13.5,2.5,70,Rajasic,Breakfast/Lunch,All Year,Pan Frying,20,"Whole Wheat Flour, Ghee/Oil","Good source of energy, satisfying","Weight management, high cholesterol",70,231,5.3,31.5,9.5,50,3
++IF004,Dosa,Bread,South India,120,3.0,20.0,3.5,1.2,65,Sattvic,Breakfast/Dinner,All Year,Pan Frying,15,"Rice, Urad Dal","Fermented food good for gut health, protein from lentils","Fermentation sensitivity, acidity",100,120,3.0,20.0,3.5,65,7
++IF005,Idli,Bread,South India,35,2.0,7.0,0.1,0.4,60,Sattvic,Breakfast/Dinner,All Year,Steaming,20,"Rice, Urad Dal","Low in calories, fermented for gut health, easy to digest","Fermentation sensitivity",120,42,2.4,8.4,0.1,70,9
++IF006,Uttapam,Bread,South India,170,4.5,28.0,5.0,1.5,65,Sattvic,Breakfast/Dinner,All Year,Pan Frying,20,"Rice, Urad Dal, Vegetables","Contains vegetables, fermented for gut health","Fermentation sensitivity",150,255,6.8,42.0,7.5,60,6
++IF007,Appam,Bread,Kerala,165,2.5,32.0,3.0,0.8,70,Sattvic,Breakfast/Dinner,All Year,Pan Frying,25,"Rice Flour, Coconut Milk","Light and easy to digest, good with curries","Coconut allergy",100,165,2.5,32.0,3.0,55,6
++IF008,Bhakri,Bread,Western India,120,3.0,25.0,0.5,3.5,50,Sattvic,All Meals,All Year,Baking,15,"Jowar/Bajra Flour, Water","High in fiber, gluten-free, good for diabetics",None,30,36,0.9,7.5,0.2,80,8
++IF009,Chapati,Bread,All India,120,3.5,20.5,1.2,2.8,55,Sattvic,All Meals,All Year,Baking,10,"Whole Wheat Flour, Water","High in complex carbs, good source of fiber","Gluten sensitivity, celiac disease",30,36,1.1,6.2,0.4,75,8
++IF010,Kulcha,Bread,North India,280,8.5,50.0,5.0,1.8,75,Rajasic,Lunch/Dinner,All Year,Baking,25,"Refined Flour, Yogurt, Butter","Good source of protein, energy-dense","Gluten sensitivity, celiac disease, weight management",70,196,6.0,35.0,3.5,40,3
++IF011,Plain Rice,Grains,All India,130,2.7,28.0,0.3,0.4,70,Sattvic,Lunch/Dinner,All Year,Boiling,20,"White Rice, Water","Easy to digest, energy source","Diabetes, weight management",150,195,4.1,42.0,0.5,40,5
++IF012,Brown Rice,Grains,All India,112,2.6,23.0,0.9,1.8,50,Sattvic,Lunch/Dinner,All Year,Boiling,30,"Brown Rice, Water","High in fiber, B vitamins, sustained energy","Digestive sensitivity",150,168,3.9,34.5,1.4,70,7
++IF013,Jeera Rice,Grains,North India,140,2.8,28.5,2.0,0.5,70,Sattvic,Lunch/Dinner,All Year,Boiling,25,"White Rice, Cumin Seeds, Ghee","Cumin aids digestion, aromatic","Diabetes, weight management",150,210,4.2,42.8,3.0,45,5
++IF014,Pulao,Grains,All India,180,4.0,30.0,5.0,1.5,65,Sattvic,Lunch/Dinner,All Year,Boiling,30,"Rice, Vegetables, Spices, Ghee","Contains vegetables, aromatic spices aid digestion","Weight management",200,360,8.0,60.0,10.0,55,5
++IF015,Biryani,Grains,Hyderabad,250,8.0,32.0,10.0,1.2,65,Rajasic,Lunch/Dinner,All Year,Dum Cooking,60,"Rice, Meat/Vegetables, Spices, Ghee","Protein-rich, aromatic spices aid digestion","Weight management, high cholesterol",250,625,20.0,80.0,25.0,60,4
++IF016,Khichdi,Grains,All India,130,5.0,23.0,2.5,2.0,55,Sattvic,Lunch/Dinner,All Year,Boiling,30,"Rice, Moong Dal, Spices, Ghee","Easy to digest, balanced protein and carbs, good for recovery","None - considered healing food",200,260,10.0,46.0,5.0,75,8
++IF017,Curd Rice,Grains,South India,150,5.5,25.0,3.0,0.5,50,Sattvic,Lunch/Dinner,All Year,Mixing,15,"Rice, Yogurt, Tempering","Probiotics from yogurt, cooling, good for gut health","Lactose intolerance",200,300,11.0,50.0,6.0,65,7
++IF018,Lemon Rice,Grains,South India,170,3.0,30.0,4.5,0.8,65,Sattvic,Lunch,All Year,Tempering,20,"Rice, Lemon Juice, Peanuts, Tempering","Vitamin C from lemon, refreshing","Peanut allergy",200,340,6.0,60.0,9.0,50,6
++IF019,Tamarind Rice,Grains,South India,180,3.5,32.0,5.0,1.0,60,Rajasic,Lunch,All Year,Tempering,25,"Rice, Tamarind Paste, Peanuts, Tempering","Tangy flavor, good source of iron from tamarind","Peanut allergy, acidity",200,360,7.0,64.0,10.0,55,5
++IF020,Coconut Rice,Grains,South India,200,4.0,30.0,8.0,2.0,60,Sattvic,Lunch,All Year,Tempering,20,"Rice, Coconut, Tempering","Good source of medium-chain fatty acids","Coconut allergy, weight management",200,400,8.0,60.0,16.0,60,5
++IF021,Dal Tadka,Lentils,North India,120,7.0,18.0,3.0,4.5,30,Sattvic,Lunch/Dinner,All Year,Boiling,30,"Toor Dal, Spices, Ghee","High in protein and fiber, good for digestion",None,150,180,10.5,27.0,4.5,85,8
++IF022,Dal Makhani,Lentils,Punjab,240,9.0,28.0,10.0,7.0,30,Rajasic,Lunch/Dinner,All Year,Slow Cooking,60,"Black Gram, Kidney Beans, Butter, Cream","High in protein and fiber, iron-rich","High cholesterol, weight management",150,360,13.5,42.0,15.0,70,4
++IF023,Sambar,Lentils,South India,80,3.5,14.0,1.5,3.0,35,Sattvic,Lunch/Dinner,All Year,Boiling,40,"Toor Dal, Vegetables, Tamarind, Spices","Rich in vegetables, protein, and fiber","Tamarind sensitivity (acidity)",200,160,7.0,28.0,3.0,80,9
++IF024,Rasam,Lentils,South India,40,1.5,7.0,0.5,1.0,30,Sattvic,Lunch/Dinner,All Year,Boiling,30,"Toor Dal, Tomatoes, Tamarind, Spices","Aids digestion, good for colds, low calorie","Tamarind sensitivity (acidity)",150,60,2.3,10.5,0.8,75,10
++IF025,Rajma,Lentils,North India,140,9.0,20.0,1.5,7.0,25,Sattvic,Lunch/Dinner,All Year,Boiling,45,"Kidney Beans, Tomatoes, Spices","High in protein and fiber, good for heart health",None,150,210,13.5,30.0,2.3,85,8
++IF026,Chole (Chickpea Curry),Lentils,North India,160,8.0,24.0,4.0,6.0,28,Rajasic,Lunch/Dinner,All Year,Boiling,45,"Chickpeas, Tomatoes, Spices","High in protein and fiber, good for heart health",None,150,240,12.0,36.0,6.0,80,7
++IF027,Moong Dal,Lentils,All India,100,7.0,15.0,0.5,4.0,25,Sattvic,Lunch/Dinner,All Year,Boiling,30,"Moong Dal, Spices","Easy to digest, high in protein, good for detox",None,150,150,10.5,22.5,0.8,85,9
++IF028,Masoor Dal,Lentils,All India,110,8.0,16.0,0.8,5.0,25,Sattvic,Lunch/Dinner,All Year,Boiling,30,"Masoor Dal, Spices","High in protein and iron, cooks quickly",None,150,165,12.0,24.0,1.2,85,9
++IF029,Urad Dal,Lentils,All India,130,7.5,20.0,1.0,5.5,30,Rajasic,Lunch/Dinner,All Year,Boiling,40,"Urad Dal, Spices","High in protein, good for strength and energy",None,150,195,11.3,30.0,1.5,80,8
++IF030,Panchmel Dal,Lentils,Rajasthan,125,8.0,18.0,1.5,6.0,28,Sattvic,Lunch/Dinner,All Year,Boiling,45,"Five Lentils Mix, Spices","Balanced nutrition from variety of lentils",None,150,188,12.0,27.0,2.3,85,8
++IF031,Palak Paneer,Vegetable Curry,North India,180,8.0,6.0,14.0,2.5,30,Sattvic,Lunch/Dinner,Winter,Sautéing,30,"Spinach, Cottage Cheese, Spices","Iron from spinach, protein from paneer, calcium-rich","Lactose intolerance, kidney stones (oxalates)",150,270,12.0,9.0,21.0,75,6
++IF032,Aloo Gobi,Vegetable Curry,North India,110,3.0,18.0,3.5,3.0,65,Sattvic,Lunch/Dinner,Winter,Sautéing,30,"Potatoes, Cauliflower, Spices","Vitamin C, fiber, antioxidants from vegetables","Diabetes (high carb content)",150,165,4.5,27.0,5.3,70,7
++IF033,Baingan Bharta,Vegetable Curry,North India,120,2.5,14.0,7.0,4.5,35,Sattvic,Lunch/Dinner,All Year,Roasting,40,"Eggplant, Tomatoes, Spices","Low in calories, high in fiber, antioxidants",None,150,180,3.8,21.0,10.5,75,8
++IF034,Bhindi Masala,Vegetable Curry,All India,130,4.0,15.0,7.5,5.0,40,Sattvic,Lunch/Dinner,Summer,Sautéing,25,"Okra, Onions, Spices","High in fiber, vitamin C, and folate","Kidney stones (oxalates)",150,195,6.0,22.5,11.3,75,7
++IF035,Malai Kofta,Vegetable Curry,North India,280,7.0,20.0,19.0,2.0,50,Rajasic,Lunch/Dinner,All Year,Frying,60,"Potato, Paneer, Cream, Nuts","Rich in protein and calcium","Weight management, high cholesterol",150,420,10.5,30.0,28.5,50,3
++IF036,Chana Masala,Vegetable Curry,North India,160,8.0,24.0,4.0,6.0,28,Rajasic,Lunch/Dinner,All Year,Boiling,40,"Chickpeas, Tomatoes, Spices","High in protein and fiber, good for heart health",None,150,240,12.0,36.0,6.0,80,7
++IF037,Vegetable Korma,Vegetable Curry,North India,200,5.0,15.0,14.0,3.5,40,Rajasic,Lunch/Dinner,All Year,Sautéing,40,"Mixed Vegetables, Coconut Milk, Nuts","Variety of nutrients from different vegetables","Nut allergies, weight management",150,300,7.5,22.5,21.0,65,5
++IF038,Pav Bhaji,Vegetable Curry,Maharashtra,220,6.0,30.0,9.0,4.0,60,Rajasic,Lunch/Snack,All Year,Mashing,30,"Mixed Vegetables, Potatoes, Butter, Bread","Contains various vegetables, vitamin-rich","Weight management, gluten sensitivity",250,550,15.0,75.0,22.5,60,5
++IF039,Avial,Vegetable Curry,Kerala,140,3.5,16.0,8.0,4.5,35,Sattvic,Lunch/Dinner,All Year,Steaming,35,"Mixed Vegetables, Coconut, Yogurt","Variety of nutrients from different vegetables, probiotics from yogurt","Coconut allergy, lactose intolerance",150,210,5.3,24.0,12.0,75,7
++IF040,Kadhi,Vegetable Curry,North India,120,4.0,12.0,7.0,1.0,35,Sattvic,Lunch/Dinner,All Year,Boiling,30,"Yogurt, Gram Flour, Spices","Probiotics from yogurt, protein from gram flour","Lactose intolerance",200,240,8.0,24.0,14.0,65,7
++IF041,Butter Chicken,Non-Veg Curry,Punjab,280,20.0,8.0,18.0,1.0,30,Rajasic,Lunch/Dinner,All Year,Simmering,45,"Chicken, Tomatoes, Butter, Cream","High in protein, vitamin B12, iron","High cholesterol, weight management",200,560,40.0,16.0,36.0,60,4
++IF042,Chicken Curry,Non-Veg Curry,All India,180,18.0,6.0,10.0,1.5,25,Rajasic,Lunch/Dinner,All Year,Simmering,40,"Chicken, Onions, Tomatoes, Spices","High in protein, lower in fat than butter chicken",None,200,360,36.0,12.0,20.0,70,6
++IF043,Fish Curry,Non-Veg Curry,Coastal India,160,20.0,5.0,7.0,1.0,20,Rajasic,Lunch/Dinner,All Year,Simmering,30,"Fish, Coconut Milk/Tomatoes, Spices","High in protein, omega-3 fatty acids, vitamin D","Fish allergy",200,320,40.0,10.0,14.0,85,7
++IF044,Prawn Curry,Non-Veg Curry,Coastal India,170,22.0,6.0,7.5,0.5,20,Rajasic,Lunch/Dinner,All Year,Simmering,25,"Prawns, Coconut Milk/Tomatoes, Spices","High in protein, iodine, selenium","Shellfish allergy",200,340,44.0,12.0,15.0,80,7
++IF045,Mutton Rogan Josh,Non-Veg Curry,Kashmir,220,22.0,5.0,13.0,1.0,20,Tamasic,Lunch/Dinner,All Year,Slow Cooking,60,"Mutton, Yogurt, Spices","High in protein, iron, zinc","High cholesterol, weight management",200,440,44.0,10.0,26.0,65,5
++IF046,Keema Matar,Non-Veg Curry,North India,200,18.0,10.0,10.0,2.0,30,Rajasic,Lunch/Dinner,All Year,Sautéing,35,"Minced Meat, Peas, Spices","High in protein, iron, fiber from peas",None,150,300,27.0,15.0,15.0,70,6
++IF047,Tandoori Chicken,Grilled,Punjab,165,25.0,2.0,7.0,0.0,15,Rajasic,Lunch/Dinner,All Year,Grilling,40,"Chicken, Yogurt, Spices","High in protein, low in carbs, lean preparation","None (healthy option)",150,248,37.5,3.0,10.5,80,8
++IF048,Chicken Tikka,Grilled,North India,170,26.0,3.0,6.0,0.0,15,Rajasic,Appetizer/Dinner,All Year,Grilling,30,"Chicken, Yogurt, Spices","High in protein, low in carbs, lean preparation","None (healthy option)",120,204,31.2,3.6,7.2,80,8
++IF049,Seekh Kebab,Grilled,North India,220,18.0,5.0,15.0,0.5,20,Rajasic,Appetizer/Dinner,All Year,Grilling,35,"Minced Meat, Spices","High in protein, iron, zinc","High fat content",100,220,18.0,5.0,15.0,65,6
++IF050,Paneer Tikka,Grilled,North India,200,14.0,5.0,14.0,0.5,25,Sattvic,Appetizer/Dinner,All Year,Grilling,25,"Paneer, Yogurt, Spices","High in protein and calcium","Lactose intolerance, weight management",120,240,16.8,6.0,16.8,70,6
++IF051,Raita,Accompaniment,All India,60,2.5,5.0,3.0,0.5,15,Sattvic,Lunch/Dinner,All Year,Mixing,10,"Yogurt, Vegetables/Fruits, Spices","Probiotics, cooling, aids digestion","Lactose intolerance",100,60,2.5,5.0,3.0,70,9
++IF052,Papad,Accompaniment,All India,50,2.0,10.0,0.5,0.5,70,Rajasic,Lunch/Dinner,All Year,Roasting/Frying,5,"Lentil Flour, Spices","Low calorie (when roasted), aids digestion","High sodium",10,5,0.2,1.0,0.1,40,8
++IF053,Pickle (Achar),Accompaniment,All India,80,1.0,8.0,5.0,1.5,15,Rajasic,Lunch/Dinner,All Year,Fermentation,Preparation days,"Vegetables/Fruits, Oil, Spices","Probiotics from fermentation, aids digestion","High sodium, acidity",15,12,0.2,1.2,0.8,50,7
++IF054,Chutney (Mint),Accompaniment,All India,30,1.0,5.0,0.5,1.0,15,Sattvic,All Meals,All Year,Grinding,15,"Mint, Coriander, Spices","Aids digestion, cooling, antioxidants",None,30,9,0.3,1.5,0.2,75,10
++IF055,Chutney (Coconut),Accompaniment,South India,100,2.0,6.0,8.0,2.0,20,Sattvic,All Meals,All Year,Grinding,15,"Coconut, Spices","Good fats from coconut, aids digestion","Coconut allergy",30,30,0.6,1.8,2.4,65,7
++IF056,Samosa,Snack,North India,260,5.0,30.0,14.0,2.0,75,Rajasic,Snack,All Year,Frying,45,"Refined Flour, Potatoes, Peas, Spices","Satisfying, contains some vegetables","Weight management, high cholesterol",60,156,3.0,18.0,8.4,40,3
++IF057,Pakora,Snack,All India,240,6.0,25.0,14.0,2.5,70,Rajasic,Snack,All Year,Frying,20,"Gram Flour, Vegetables, Spices","Contains vegetables, protein from gram flour","Weight management, high cholesterol",50,120,3.0,12.5,7.0,45,3
++IF058,Vada,Snack,South India,220,5.0,28.0,10.0,3.0,70,Rajasic,Breakfast/Snack,All Year,Frying,30,"Urad Dal, Spices","Protein from lentils, satisfying","Weight management, high cholesterol",50,110,2.5,14.0,5.0,50,4
++IF059,Dhokla,Snack,Gujarat,160,5.0,25.0,5.0,2.0,45,Sattvic,Breakfast/Snack,All Year,Steaming,30,"Gram Flour, Semolina, Spices","Fermented, protein-rich, low fat due to steaming",None,100,160,5.0,25.0,5.0,70,7
++IF060,Khandvi,Snack,Gujarat,150,4.0,20.0,6.0,1.5,40,Sattvic,Snack,All Year,Steaming,40,"Gram Flour, Yogurt, Spices","Protein from gram flour, probiotics from yogurt","Lactose intolerance",100,150,4.0,20.0,6.0,65,7
++IF061,Poha,Breakfast,Central India,130,3.0,25.0,3.0,1.0,65,Sattvic,Breakfast,All Year,Steaming,20,"Flattened Rice, Peanuts, Spices","Light, easy to digest, quick energy","Peanut allergy",150,195,4.5,37.5,4.5,60,7
++IF062,Upma,Breakfast,South India,150,4.0,28.0,3.5,2.0,60,Sattvic,Breakfast,All Year,Sautéing,20,"Semolina, Vegetables, Spices","Contains vegetables, light on stomach","Gluten sensitivity",150,225,6.0,42.0,5.3,65,7
++IF063,Misal Pav,Breakfast,Maharashtra,220,10.0,35.0,5.0,6.0,50,Rajasic,Breakfast/Lunch,All Year,Boiling,40,"Sprouted Moth Beans, Bread, Spices","High in protein from sprouts, fiber-rich","Gluten sensitivity (pav)",200,440,20.0,70.0,10.0,75,6
++IF064,Pongal,Breakfast,Tamil Nadu,180,5.0,32.0,4.0,1.5,55,Sattvic,Breakfast,All Year,Boiling,30,"Rice, Moong Dal, Ghee, Spices","Balanced protein and carbs, easy to digest",None,200,360,10.0,64.0,8.0,70,6
++IF065,Thepla,Breakfast,Gujarat,170,4.5,25.0,6.0,3.0,50,Sattvic,Breakfast/Snack,All Year,Pan Frying,25,"Whole Wheat Flour, Fenugreek Leaves, Spices","Fenugreek good for digestion and lactation, portable","Gluten sensitivity",60,102,2.7,15.0,3.6,75,7
++IF066,Gulab Jamun,Dessert,North India,320,5.0,50.0,10.0,0.0,65,Rajasic,Dessert,All Year,Frying,45,"Milk Solids, Sugar Syrup","Calcium from milk solids, festive treat","Diabetes, weight management",60,192,3.0,30.0,6.0,30,2
++IF067,Rasgulla,Dessert,Bengal,180,4.0,35.0,0.5,0.0,60,Sattvic,Dessert,All Year,Boiling,60,"Cottage Cheese, Sugar Syrup","Lower in fat than many desserts, calcium-rich","Diabetes, lactose intolerance",60,108,2.4,21.0,0.3,40,4
++IF068,Jalebi,Dessert,North India,350,3.0,65.0,10.0,0.0,80,Rajasic,Dessert,All Year,Frying,40,"Refined Flour, Sugar Syrup","Quick energy, festive treat","Diabetes, weight management",50,175,1.5,32.5,5.0,20,1
++IF069,Kheer,Dessert,All India,180,4.0,30.0,5.0,0.5,55,Sattvic,Dessert,All Year,Simmering,45,"Rice/Vermicelli, Milk, Sugar, Nuts","Calcium from milk, energy from carbs","Diabetes, lactose intolerance",100,180,4.0,30.0,5.0,45,4
++IF070,Gajar Halwa,Dessert,North India,200,3.0,30.0,8.0,2.0,50,Sattvic,Dessert,Winter,Simmering,60,"Carrots, Milk, Sugar, Ghee, Nuts","Vitamin A from carrots, calcium from milk","Diabetes, lactose intolerance",60,120,1.8,18.0,4.8,50,4
++IF071,Lassi (Sweet),Beverage,Punjab,120,3.5,20.0,3.0,0.0,35,Sattvic,Breakfast/Snack,Summer,Blending,10,"Yogurt, Sugar, Cardamom","Probiotics from yogurt, cooling, calcium-rich","Lactose intolerance",250,300,8.8,50.0,7.5,55,5
++IF072,Lassi (Salted),Beverage,Punjab,80,4.0,8.0,3.0,0.0,15,Sattvic,Lunch/Snack,Summer,Blending,10,"Yogurt, Salt, Cumin","Probiotics from yogurt, cooling, electrolytes","Lactose intolerance",250,200,10.0,20.0,7.5,65,8
++IF073,Chaas (Buttermilk),Beverage,All India,40,3.0,4.0,1.0,0.0,15,Sattvic,After Meals,Summer,Churning,5,"Yogurt, Water, Spices","Aids digestion, cooling, probiotics, low calorie","Lactose intolerance",200,80,6.0,8.0,2.0,70,10
++IF074,Nimbu Pani (Lemonade),Beverage,All India,50,0.1,12.0,0.1,0.0,20,Sattvic,Any Time,Summer,Mixing,5,"Lemon Juice, Water, Sugar/Salt","Vitamin C, hydrating, electrolytes","None (healthy option)",250,125,0.3,30.0,0.3,60,8
++IF075,Masala Chai,Beverage,All India,80,2.0,15.0,1.5,0.0,30,Rajasic,Breakfast/Evening,All Year,Boiling,10,"Tea Leaves, Milk, Sugar, Spices","Antioxidants from tea, warming spices aid digestion","Caffeine sensitivity, lactose intolerance",150,120,3.0,22.5,2.3,50,6
++IF076,Filter Coffee,Beverage,South India,60,1.5,10.0,1.5,0.0,30,Rajasic,Breakfast/Evening,All Year,Brewing,15,"Coffee Powder, Milk, Sugar","Antioxidants from coffee, alertness","Caffeine sensitivity, lactose intolerance",150,90,2.3,15.0,2.3,45,6
++IF077,Thandai,Beverage,North India,180,5.0,25.0,7.0,1.0,35,Sattvic,Festivals,Spring,Grinding/Mixing,30,"Milk, Nuts, Seeds, Sugar, Spices","Protein from nuts, calcium from milk, cooling","Nut allergies, lactose intolerance",200,360,10.0,50.0,14.0,60,4
++IF078,Aam Panna,Beverage,All India,70,0.5,17.0,0.1,0.5,30,Sattvic,Summer Drink,Summer,Blending,20,"Raw Mango, Sugar/Jaggery, Spices","Cooling, prevents heat stroke, vitamin C","None (healthy option)",200,140,1.0,34.0,0.2,65,7
++IF079,Sattu Drink,Beverage,Bihar,120,6.0,20.0,2.0,3.0,35,Sattvic,Breakfast/Summer,All Year,Mixing,5,"Roasted Gram Flour, Water, Spices","High protein, sustained energy, cooling","None (healthy option)",250,300,15.0,50.0,5.0,80,8
++IF080,Kokum Sherbet,Beverage,Western India,60,0.2,15.0,0.1,0.5,25,Sattvic,Summer Drink,Summer,Mixing,15,"Kokum Extract, Sugar, Spices","Cooling, aids digestion, antioxidants","None (healthy option)",200,120,0.4,30.0,0.2,65,8
++IF081,Aloo Paratha,Stuffed Bread,North India,250,6.0,35.0,10.0,3.0,65,Rajasic,Breakfast/Lunch,All Year,Pan Frying,30,"Whole Wheat Flour, Potatoes, Spices, Ghee","Satisfying, energy-dense","Weight management, diabetes",100,250,6.0,35.0,10.0,55,4
++IF082,Gobi Paratha,Stuffed Bread,North India,230,6.0,32.0,9.0,4.0,60,Rajasic,Breakfast/Lunch,Winter,Pan Frying,30,"Whole Wheat Flour, Cauliflower, Spices, Ghee","Contains vegetables, more fiber than plain paratha","Weight management, gluten sensitivity",100,230,6.0,32.0,9.0,60,5
++IF083,Paneer Paratha,Stuffed Bread,North India,280,10.0,30.0,12.0,2.5,55,Rajasic,Breakfast/Lunch,All Year,Pan Frying,30,"Whole Wheat Flour, Cottage Cheese, Spices, Ghee","High in protein and calcium","Weight management, lactose intolerance",100,280,10.0,30.0,12.0,65,5
++IF084,Methi Paratha,Stuffed Bread,North India,220,6.0,30.0,8.0,4.5,55,Sattvic,Breakfast/Lunch,Winter,Pan Frying,25,"Whole Wheat Flour, Fenugreek Leaves, Spices, Ghee","Iron and fiber from fenugreek, good for digestion","Gluten sensitivity",100,220,6.0,30.0,8.0,70,6
++IF085,Mooli Paratha,Stuffed Bread,North India,210,5.5,30.0,7.5,4.0,55,Sattvic,Breakfast/Lunch,Winter,Pan Frying,30,"Whole Wheat Flour, Radish, Spices, Ghee","Radish aids digestion, good source of vitamin C","Gluten sensitivity",100,210,5.5,30.0,7.5,65,6
++IF086,Chole Bhature,Street Food,North India,450,12.0,60.0,18.0,6.0,70,Rajasic,Lunch,All Year,Frying,60,"Refined Flour, Chickpeas, Spices, Oil","Protein from chickpeas, satisfying","Weight management, high cholesterol",250,1125,30.0,150.0,45.0,50,3
++IF087,Pani Puri,Street Food,All India,180,3.0,35.0,3.0,1.0,65,Rajasic,Snack,All Year,Frying,30,"Semolina, Potatoes, Tamarind Water, Spices","Light, tangy, refreshing","Hygiene concerns in street settings",150,270,4.5,52.5,4.5,45,5
++IF088,Bhel Puri,Street Food,Maharashtra,180,5.0,30.0,5.0,3.0,55,Rajasic,Snack,All Year,Mixing,15,"Puffed Rice, Vegetables, Chutneys, Spices","Contains vegetables, light, tangy","Hygiene concerns in street settings",150,270,7.5,45.0,7.5,55,6
++IF089,Dahi Vada,Street Food,All India,180,7.0,25.0,6.0,2.0,45,Sattvic,Snack,All Year,Frying/Soaking,40,"Urad Dal, Yogurt, Spices","Protein from lentils, probiotics from yogurt","Lactose intolerance",150,270,10.5,37.5,9.0,65,6
++IF090,Ragda Pattice,Street Food,Maharashtra,250,7.0,40.0,7.0,5.0,60,Rajasic,Snack,All Year,Frying/Boiling,45,"Potatoes, White Peas, Spices","Protein from peas, satisfying","Weight management",200,500,14.0,80.0,14.0,55,5
++IF091,Kachori,Street Food,North India,280,5.0,35.0,15.0,2.0,70,Rajasic,Snack,All Year,Frying,40,"Refined Flour, Lentils/Peas, Spices, Oil","Satisfying, some protein from filling","Weight management, high cholesterol",60,168,3.0,21.0,9.0,40,3
++IF092,Vada Pav,Street Food,Maharashtra,300,8.0,45.0,10.0,2.5,70,Rajasic,Snack,All Year,Frying,30,"Bread, Potato Fritter, Chutneys","Satisfying, portable","Weight management, gluten sensitivity",120,360,9.6,54.0,12.0,45,4
++IF093,Dabeli,Street Food,Gujarat,280,6.0,42.0,9.0,3.0,65,Rajasic,Snack,All Year,Pan Frying,25,"Bread, Spiced Potato Mix, Chutneys, Peanuts","Contains various textures and flavors","Peanut allergy, weight management",120,336,7.2,50.4,10.8,50,4
++IF094,Pav Bhaji,Street Food,Maharashtra,220,6.0,30.0,9.0,4.0,60,Rajasic,Lunch/Snack,All Year,Mashing,30,"Mixed Vegetables, Potatoes, Butter, Bread","Contains various vegetables, vitamin-rich","Weight management, gluten sensitivity",250,550,15.0,75.0,22.5,60,5
++IF095,Aloo Tikki,Street Food,North India,180,3.0,30.0,6.0,2.0,70,Rajasic,Snack,All Year,Pan Frying,25,"Potatoes, Spices, Oil","Satisfying, versatile","Weight management, diabetes",100,180,3.0,30.0,6.0,45,5
++IF096,Jhal Muri,Street Food,Bengal,150,4.0,25.0,5.0,2.5,50,Rajasic,Snack,All Year,Mixing,10,"Puffed Rice, Vegetables, Mustard Oil, Spices","Light, contains vegetables, low calorie","Hygiene concerns in street settings",100,150,4.0,25.0,5.0,60,7
++IF097,Dahi Papdi Chaat,Street Food,North India,200,5.0,30.0,7.0,2.0,55,Rajasic,Snack,All Year,Assembling,15,"Crisp Wafers, Yogurt, Potatoes, Chutneys","Probiotics from yogurt, variety of flavors","Lactose intolerance",150,300,7.5,45.0,10.5,55,5
++IF098,Kathi Roll,Street Food,Bengal,300,12.0,35.0,12.0,2.0,60,Rajasic,Snack/Meal,All Year,Grilling/Rolling,20,"Paratha, Egg/Meat/Paneer, Vegetables","Protein-rich, portable","Weight management",180,540,21.6,63.0,21.6,60,5
++IF099,Misal Pav,Street Food,Maharashtra,220,10.0,35.0,5.0,6.0,50,Rajasic,Breakfast/Lunch,All Year,Boiling,40,"Sprouted Moth Beans, Bread, Spices","High in protein from sprouts, fiber-rich","Gluten sensitivity (pav)",200,440,20.0,70.0,10.0,75,6
++IF100,Dosa,Street Food,South India,120,3.0,20.0,3.5,1.2,65,Sattvic,Breakfast/Dinner,All Year,Pan Frying,15,"Rice, Urad Dal","Fermented food good for gut health, protein from lentils","Fermentation sensitivity, acidity",100,120,3.0,20.0,3.5,65,7
+

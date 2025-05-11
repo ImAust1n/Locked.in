@@ -1,12 +1,12 @@
-import { generateToken } from "../lib/utils.js";
+import { generateToken } from "../libs/utils.js";
 import User from "../models/user.model.js"
 import bcrypt from "bcryptjs"
 
 export const signup = async (req, res) => {
-    const {fullName, email, password, location, weight, height, fatPercentage, musclePercentage, muscleMass, time5k, maxPullUps, rmBenchPress, fitnessGoals, streak} = req.body;
+    const {fullName, email, password} = req.body;
     try {
 
-        if (!fullName || !email || !password || !location) {
+        if (!fullName || !email || !password) {
             return res.status(400).json({ message: "All fields are required" });
         }
 
@@ -25,7 +25,7 @@ export const signup = async (req, res) => {
             fullName,
             email,
             password:hashedPassword,
-            location,
+            location:"India",
             weight:65,
             height:180,
             fatPercentage:40,
