@@ -6,9 +6,10 @@ import requests
 import json
 # from PIL import Image
 # import io
-import ollama
+# import ollama
 from dotenv import load_dotenv
 import os
+from langchain_groq import ChatGroq
 
 load_dotenv()
 
@@ -21,8 +22,8 @@ CORS(app)  # Enable CORS for React
 def chat():
     user_input = request.json.get('message')
     API_KEY = os.getenv("OPENROUTER_API_KEY")
-    MODEL = "deepseek/deepseek-r1:free"
-
+    MODEL = "llama-3.3-70b-versatile"
+    
     url = "https://openrouter.ai/api/v1/chat/completions"
     headers = {
         f"Authorization": f"Bearer {API_KEY}",
@@ -55,6 +56,20 @@ def chat():
     except requests.exceptions.RequestException as e:
         return jsonify({"response": "Error: " + str(e)})
 
+@app.route('/api/chat2', methods=['POST'])
+def chat2():
+    user_input = request.json.get('message')
+    llm = ChatGroq(
+        model_name="llama-3.3-70b-versatile", 
+        api_key=os.getenv("GROQ_API_KEY")
+    )
+
+    res = llm.invoke(
+       "give small and quick replies like human to the user query, " + user_input
+    )
+
+    return jsonify({"response": res.content})
+
 @app.route('/api/trainer', methods=['POST'])
 def trainer():
     user_input = request.json.get('message')
@@ -70,7 +85,7 @@ def trainer():
     data = {
         "model": MODEL,
         "messages": [
-            {"role": "system", "content": "You are an expert in fitness trainer. Give brief explaination and put it out in points. No need of much formating of the text."},
+            {"role": "system", "content": "You are an expert in fitness trainer. Give brief explaination in a human centric way. No need of much formating of the text. Give answer to the user query breifly."},
             {"role": "user", "content": user_input}
         ],
         "temperature": 0.8,  # Adjusts randomness; higher = more creative
@@ -109,7 +124,7 @@ def dietian():
     data = {
         "model": MODEL,
         "messages": [
-            {"role": "system", "content": "You are an expert in fitness dietian. Give brief explaination and put it out in points. No need of much formating of the text."},
+            {"role": "system", "content": "You are an expert in fitness dietian. Give brief explaination in a human centric way. No need of much formating of the text. Give answer to the user query breifly."},
             {"role": "user", "content": user_input}
         ],
         "temperature": 0.8,  # Adjusts randomness; higher = more creative
@@ -147,7 +162,7 @@ def wellness():
     data = {
         "model": MODEL,
         "messages": [
-            {"role": "system", "content": "You are an expert in stress management, sleep and meditation. Give brief explaination and put it out in points. No need of much formating of the text."},
+            {"role": "system", "content": "You are an expert in stress management, sleep and meditation. Give brief explaination in a human centric way. No need of much formating of the text. Give answer to the user query breifly."},
             {"role": "user", "content": user_input}
         ],
         "temperature": 0.8,  # Adjusts randomness; higher = more creative
@@ -185,54 +200,54 @@ def wellness():
 #     return jsonify({"response": response['message']['content']})
 
 
-import pandas as pd
-import numpy as np
-import ollama
-# For Apple Silicon Macs, use faiss-cpu package
-import faiss
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from sentence_transformers import SentenceTransformer
+# import pandas as pd
+# import numpy as np
+# import ollama
+# # For Apple Silicon Macs, use faiss-cpu package
+# import faiss
+# from langchain.text_splitter import RecursiveCharacterTextSplitter
+# from sentence_transformers import SentenceTransformer
 
-# Load and preprocess data
-# Handle inconsistent CSV formatting by skipping bad lines
-df = pd.read_csv("static/Dont_lose_your_mind_lose_your_weight_exercise.csv", on_bad_lines='skip')
-all_text = " ".join(df['Exercise Type'].dropna().astype(str).tolist())
+# # Load and preprocess data
+# # Handle inconsistent CSV formatting by skipping bad lines
+# df = pd.read_csv("static/Dont_lose_your_mind_lose_your_weight_exercise.csv", on_bad_lines='skip')
+# all_text = " ".join(df['Exercise Type'].dropna().astype(str).tolist())
 
-# Split text into chunks
-text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,
-    chunk_overlap=50
-)
-chunks = text_splitter.split_text(all_text)
+# # Split text into chunks
+# text_splitter = RecursiveCharacterTextSplitter(
+#     chunk_size=500,
+#     chunk_overlap=50
+# )
+# chunks = text_splitter.split_text(all_text)
 
-# Generate embeddings
-model = SentenceTransformer('all-MiniLM-L6-v2')
-embeddings = model.encode(chunks)
+# # Generate embeddings
+# model = SentenceTransformer('all-MiniLM-L6-v2')
+# embeddings = model.encode(chunks)
 
-# Create FAISS index
-dimension = embeddings[0].shape[0]
-index = faiss.IndexFlatL2(dimension)
-index.add(np.array(embeddings))
+# # Create FAISS index
+# dimension = embeddings[0].shape[0]
+# index = faiss.IndexFlatL2(dimension)
+# index.add(np.array(embeddings))
 
-def get_top_k_chunks(query, k=3):
-    query_embedding = model.encode([query])
-    distances, indices = index.search(np.array(query_embedding), k)
-    return [chunks[i] for i in indices[0]]
+# def get_top_k_chunks(query, k=3):
+#     query_embedding = model.encode([query])
+#     distances, indices = index.search(np.array(query_embedding), k)
+#     return [chunks[i] for i in indices[0]]
 
-@app.route('/api/rag', methods=['POST'])
-def generate_response():
-    user_input = request.json.get('message')
-    context = "\n".join(get_top_k_chunks(user_input))
+# @app.route('/api/rag', methods=['POST'])
+# def generate_response():
+#     user_input = request.json.get('message')
+#     context = "\n".join(get_top_k_chunks(user_input))
     
-    response = ollama.chat(
-        model="llama3.2",
-        messages=[
-            {"role": "system", "content": "Answer based on the provided context only. Give brief explanation and put it out in points."},
-            {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {user_input}"}
-        ]
-    )
+#     response = ollama.chat(
+#         model="llama3.2",
+#         messages=[
+#             {"role": "system", "content": "Answer based on the provided context only. Give brief explanation and put it out in points."},
+#             {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {user_input}"}
+#         ]
+#     )
     
-    return jsonify({"response": response['message']['content']})
+#     return jsonify({"response": response['message']['content']})
 
 if __name__ == '__main__':
     # Create templates and static directories if they don't exist

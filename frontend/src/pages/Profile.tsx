@@ -16,15 +16,15 @@ const Profile = () => {
   const [showPassword, setShowPassword] = useState(false);
   
   const user = {
-    name: "Alex Rodriguez",
+    name: "Arjun Reddy",
     username: "alex_fit",
     level: 28,
     xp: 12546,
     nextLevel: 15000,
     joinDate: "January 2025",
     bio: "Fitness enthusiast focused on calisthenics and functional training. Always looking to push my limits and help others do the same!",
-    location: "Miami, FL",
-    profileImage: "https://placehold.co/300x300/0a0a0a/39FF14?text=AR",
+    location: "Hyderabad, Telangana",
+    profileImage: "/arjun.jpg",
     badges: [
       { id: 1, name: "30-Day Streak", icon: "🔥", description: "Worked out for 30 days in a row", date: "April 2025" },
       { id: 2, name: "Progress Tracker", icon: "📊", description: "Logged stats for 60 consecutive days", date: "March 2025" },
@@ -543,10 +543,10 @@ const Profile = () => {
                         </div>
                         <div>
                           <p className="font-medium">Smart Scale</p>
-                          <p className="text-xs text-gray-400">Connect your device</p>
+                          <p className="text-xs text-gray-400">Sync with other devices</p>
                         </div>
                       </div>
-                      <button className="text-sm text-glow-green">Connect</button>
+                      <button className="text-sm text-glow-green">Connected</button>
                     </div>
                     
                     <div className="flex justify-between items-center p-3 bg-black/30 rounded-md border border-white/10">
@@ -559,7 +559,7 @@ const Profile = () => {
                           <p className="text-xs text-gray-400">Sync with other services</p>
                         </div>
                       </div>
-                      <button className="text-sm text-glow-green">Connect</button>
+                      <button className="text-sm text-glow-green">Connected</button>
                     </div>
                   </div>
                 </div>

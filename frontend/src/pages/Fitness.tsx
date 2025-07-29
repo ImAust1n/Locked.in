@@ -201,7 +201,7 @@ const Fitness = () => {
                 <div key={id} className="glass-card border-glow-red/30 hover:shadow-[0_0_15px_rgba(255,59,59,0.5)] overflow-hidden group">
                   <div className="relative h-40">
                     <img 
-                      src={`https://placehold.co/600x400/0a0a0a/39FF14?text=Workout+${id}`}
+                      src={`/f${parseInt(id.replace('v', '')) + 4}.jpg`}
                       alt={`Favorite Workout ${id}`}
                       className="w-full h-full object-cover"
                     />

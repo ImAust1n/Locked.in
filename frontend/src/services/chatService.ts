@@ -12,7 +12,7 @@ export type ChatBotType = 'fitness' | 'nutrition' | 'wellness';
 
 // API route mapping for different bot types
 const apiRoutes: Record<ChatBotType, string> = {
-  fitness: '/api/chat',     // General fitness advice
+  fitness: '/api/trainer',     // General fitness advice
   nutrition: '/api/dietian', // Nutrition/diet advice
   wellness: '/api/wellness'  // Stress management, sleep, and meditation
 };
@@ -49,7 +49,10 @@ export const chatService = {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message: content }),
+        body: JSON.stringify({ 
+          message: content,
+          botType: botType // Include the bot type in the request
+        }),
       });
       
       if (!response.ok) {

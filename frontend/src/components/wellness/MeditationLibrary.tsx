@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Play, Pause, Clock, Tag } from 'lucide-react';
 import { wellnessService, Meditation } from '@/services/wellnessService';
@@ -13,6 +12,14 @@ export const MeditationLibrary = ({ onMeditationSelect }: MeditationLibraryProps
   const [loading, setLoading] = useState(true);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [playingId, setPlayingId] = useState<string | null>(null);
+  
+  const youtubeLinks = [
+    "https://www.youtube.com/embed/odADwWzHR24?si=CHo9wJ-H_ZzDVxhr",
+    "https://www.youtube.com/embed/NUPmQTKu134?si=Ezqr9vtpL_Jr0QFK",
+    "https://www.youtube.com/embed/_3fvhTO3pLM?si=G0pKX42e9OsjkkfE",
+    "https://www.youtube.com/embed/ausxoXBrmWs?si=6NP2XNLTVMTl0hCL",
+    "https://www.youtube.com/embed/sWrgKDzM0LU?si=Kcn4TWDxo15gLLkj"
+  ];
   
   useEffect(() => {
     const loadMeditations = async () => {
@@ -30,13 +37,14 @@ export const MeditationLibrary = ({ onMeditationSelect }: MeditationLibraryProps
     loadMeditations();
   }, []);
   
-  const handlePlayPause = (id: string) => {
+  const handlePlayPause = (id: string, index: number) => {
     if (playingId === id) {
       setPlayingId(null);
       toast.info('Meditation paused');
     } else {
       setPlayingId(id);
       onMeditationSelect(id);
+      window.open(youtubeLinks[index % youtubeLinks.length], '_blank');
     }
   };
   
@@ -80,7 +88,7 @@ export const MeditationLibrary = ({ onMeditationSelect }: MeditationLibraryProps
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filteredMeditations.map((meditation) => (
+        {filteredMeditations.map((meditation, index) => (
           <div key={meditation.id} className="bg-black/30 rounded-lg overflow-hidden border border-gray-700 hover:border-glow-green/30 transition-all">
             <div 
               className="h-40 bg-cover bg-center" 
@@ -107,7 +115,7 @@ export const MeditationLibrary = ({ onMeditationSelect }: MeditationLibraryProps
             <div className="p-3">
               <p className="text-sm text-gray-400 mb-3 line-clamp-2">{meditation.description}</p>
               <button
-                onClick={() => handlePlayPause(meditation.id)}
+                onClick={() => handlePlayPause(meditation.id, index)}
                 className={`w-full py-2 rounded-md flex items-center justify-center gap-2 transition-colors ${
                   playingId === meditation.id
                     ? 'bg-glow-green/30 text-glow-green'

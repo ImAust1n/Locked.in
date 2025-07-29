@@ -29,7 +29,7 @@ const Events = () => {
       time: "8:00 AM",
       location: "Central Park, New York",
       description: "Start your day with an energizing yoga session led by expert instructors.",
-      image: "https://placehold.co/600x400/0a0a0a/39FF14?text=Yoga+Event",
+      image: "/f6.jpg",
       category: "Yoga",
       attendees: 24,
       isFull: false
@@ -41,7 +41,7 @@ const Events = () => {
       time: "6:30 PM",
       location: "Riverside Track",
       description: "Challenge yourself with high-intensity interval training followed by a group run.",
-      image: "https://placehold.co/600x400/0a0a0a/39FF14?text=HIIT+Event",
+      image: "/f5.jpg",
       category: "HIIT",
       attendees: 32,
       isFull: false
@@ -53,7 +53,7 @@ const Events = () => {
       time: "12:00 PM",
       location: "Online Zoom Session",
       description: "Learn about proper nutrition for fitness and athletic performance from expert nutritionists.",
-      image: "https://placehold.co/600x400/0a0a0a/39FF14?text=Nutrition+Workshop",
+      image: "/f9.jpg",
       category: "Nutrition",
       attendees: 56,
       isFull: false
@@ -65,7 +65,7 @@ const Events = () => {
       time: "4:00 PM",
       location: "Fitness Center Downtown",
       description: "Master the fundamentals of strength training with certified trainers.",
-      image: "https://placehold.co/600x400/0a0a0a/39FF14?text=Strength+Training",
+      image: "/f7.jpg",
       category: "Strength",
       attendees: 18,
       isFull: false
@@ -142,6 +142,23 @@ const Events = () => {
           </TabsContent>
         </Tabs>
       </main>
+      
+      <div className="spotify-playlist">
+      <h2 className="text-2xl font-bold text-center mb-4">Top Workout Songs</h2>
+      <div className="grid gap-4 p-4 bg-black/5 rounded-lg shadow-inner">
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/06KyNuuMOX1ROXRhj787tj?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/6IyoLWzljeR3ldQo4KWHT6?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/1s70cjkrdj9lpEeQQlmS9l?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/3UmeBT1Tu6fOZQi4NMZLR8?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/1BzXvBpIFWJgu0P8P6xmP4?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/4xkOaSrkexMciUUogZKVTS?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/36PTmAQ1RL4bKxmBitlBjY?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/1EJIcDYXwSqipW5dFe4uJz?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/1tF1sPrk9akJ6UOWY2GTkk?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/1jEUraTEnfLfnHUZvLCzoJ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/track/4iMYpX0D4WBqm1etFYcoEH?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
       <Footer />
       
       {selectedEvent && (

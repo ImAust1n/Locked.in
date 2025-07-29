@@ -1,7 +1,7 @@
-
 import { useState, useEffect } from 'react';
 import { MessageCircle, X, Info, Award, Star } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
+import { chatService } from '@/services/chatService';
 
 // AI Bot messages for different pages
 const pageBotMessages = {
@@ -148,25 +148,31 @@ export const AiAssistant = () => {
   };
 
   // Handle sending a message
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (!userInput.trim()) return;
-    
+
     // Add user message to conversation
-    setConversation(prev => [...prev, {type: 'user', message: userInput}]);
+    setConversation(prev => [...prev, { type: 'user', message: userInput }]);
     setIsTyping(true);
-    
+
     // Clear input
     setUserInput("");
-    
-    // Simulate bot response
-    setTimeout(() => {
-      const pageKey = getPageKey(location.pathname);
-      const tips = pageBotMessages[pageKey as keyof typeof pageBotMessages];
-      const randomResponse = tips[Math.floor(Math.random() * tips.length)];
-      
-      setConversation(prev => [...prev, {type: 'bot', message: randomResponse}]);
+
+    try {
+      // Always call /api/chat2/ for AI assistant
+      const response = await fetch('http://localhost:5000/api/chat2', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: userInput })
+      });
+      if (!response.ok) throw new Error('API error');
+      const data = await response.json();
+      setConversation(prev => [...prev, { type: 'bot', message: data.response }]);
+    } catch (error) {
+      setConversation(prev => [...prev, { type: 'bot', message: 'Sorry, I encountered an error while processing your request. Please try again later.' }]);
+    } finally {
       setIsTyping(false);
-    }, 1200);
+    }
   };
 
   const renderBotFace = () => {

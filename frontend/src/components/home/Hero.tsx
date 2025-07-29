@@ -29,8 +29,8 @@ export const Hero = () => {
               <Link to="/signup" className="btn-glow text-center">
                 Start Your Journey
               </Link>
-              <Link to="/fitness-plans" className="btn-red text-center">
-                Explore Fitness Plans
+              <Link to="/game" className="btn-red text-center">
+                Play a Game
               </Link>
             </div>
             
@@ -63,7 +63,7 @@ export const Hero = () => {
                   </div>
                 </div>
                 <img 
-                  src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
+                  src="/f1.jpg" 
                   alt="Workout Session" 
                   className="w-full h-full object-cover opacity-70"
                 />

@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Bell, Settings } from 'lucide-react';
+import { toast } from 'sonner';
 
 export const DashboardHero = () => {
   const [greeting, setGreeting] = useState('');
@@ -51,7 +52,24 @@ export const DashboardHero = () => {
           </div>
           
           <div className="flex items-center space-x-3 mt-4 md:mt-0">
-            <button className="p-2 rounded-full bg-background/30 border border-glow-green/20 hover:border-glow-green/60 transition-colors relative">
+            <button onClick={() => {
+toast.promise(
+  fetch('http://localhost:5001/api/send', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ userId: 'Arjun', type: 'notification' }),
+  }).then(res => {
+    if (!res.ok) throw new Error('Failed to check notifications');
+    return res.json();
+  }),
+  {
+    loading: 'Checking notifications...',
+    success: 'Notifications updated',
+    error: 'Could not check notifications'
+  }
+);
+
+            }} className="p-2 rounded-full bg-background/30 border border-glow-green/20 hover:border-glow-green/60 transition-colors relative">
               <Bell size={20} />
               <span className="absolute top-0 right-0 w-2 h-2 bg-glow-red rounded-full"></span>
             </button>

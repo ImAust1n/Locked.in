@@ -20,6 +20,7 @@ import Chat from "./pages/Chat";
 import NotFound from "./pages/NotFound";
 import ExplorePlans from "./pages/ExplorePlans";
 import StartWorkout from "./pages/StartWorkout";
+import Game from "./pages/Game";
 import { PageBackground } from "./components/ui/PageBackground";
 import { authService } from "./services/authService";
 import { toast } from "sonner";
@@ -67,6 +68,7 @@ const App = () => {
             <Route path="/explore-plans" element={<ExplorePlans />} />
             <Route path="/start-workout" element={<StartWorkout />} />
             <Route path="/start-workout/:planId" element={<StartWorkout />} />
+            <Route path="/game" element={<Game />} />
             <Route path="/dashboard" element={
               // <ProtectedRoute>
                 <Dashboard />

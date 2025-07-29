@@ -1,0 +1,168 @@
+/* Game-specific styles */
+:root {
+  --game-black: #0a0a0a;
+  --game-white: #f0f0f0;
+  --game-neon: #39FF14;
+  --game-red: #FF3B3B;
+  --game-dark-red: #cc0000;
+}
+
+/* Game container */
+.game-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--game-black);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Neon text */
+.neon-text {
+  color: var(--game-neon);
+  text-shadow: 0 0 5px var(--game-neon), 0 0 10px var(--game-neon);
+}
+
+/* Emoji styles */
+.emoji {
+  font-size: 2.5rem;
+  cursor: grab;
+  z-index: 10;
+  user-select: none;
+}
+
+.emoji:active {
+  cursor: grabbing;
+}
+
+/* Animations */
+@keyframes emoji-fall {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(90vh);
+  }
+}
+
+.animate-emoji-fall {
+  animation: emoji-fall var(--fall-speed, 5s) linear forwards;
+}
+
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes pulse-neon {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+
+.animate-pulse-neon {
+  animation: pulse-neon 2s ease-in-out infinite;
+}
+
+/* Celebration styles */
+.celebration-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid var(--game-neon);
+  box-shadow: 0 0 20px var(--game-neon);
+  animation: pop-in 0.5s ease-out forwards;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Font classes */
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Inter', 'Montserrat', sans-serif;
+}
+
+/* Background colors */
+.bg-game-black {
+  background-color: var(--game-black);
+}
+
+.bg-game-neon {
+  background-color: var(--game-neon);
+}
+
+.bg-game-red {
+  background-color: var(--game-red);
+}
+
+.bg-game-dark-red {
+  background-color: var(--game-dark-red);
+}
+
+/* Text colors */
+.text-game-white {
+  color: var(--game-white);
+}
+
+.text-game-neon {
+  color: var(--game-neon);
+}
+
+.text-game-red {
+  color: var(--game-red);
+}

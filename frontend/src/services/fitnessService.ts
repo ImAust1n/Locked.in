@@ -47,7 +47,7 @@ export const fitnessService = {
             duration: '30 days',
             trainer: 'Alex Johnson',
             category: 'strength',
-            image: 'https://placehold.co/600x400/0a0a0a/39FF14?text=30+Day+Challenge'
+            image: '/f11.jpg'
           },
           {
             id: '2',
@@ -57,7 +57,7 @@ export const fitnessService = {
             duration: '14 days',
             trainer: 'Samantha Lee',
             category: 'cardio',
-            image: 'https://placehold.co/600x400/0a0a0a/39FF14?text=HIIT+Cardio'
+            image: '/f5.jpg'
           },
           {
             id: '3',
@@ -67,7 +67,7 @@ export const fitnessService = {
             duration: '21 days',
             trainer: 'Michael Chen',
             category: 'yoga',
-            image: 'https://placehold.co/600x400/0a0a0a/39FF14?text=Yoga+Beginners'
+            image: '/f6.jpg'
           },
           {
             id: '4',
@@ -77,7 +77,7 @@ export const fitnessService = {
             duration: '14 days',
             trainer: 'Lisa Rodriguez',
             category: 'core',
-            image: 'https://placehold.co/600x400/0a0a0a/39FF14?text=Core+Strength'
+            image: '/f9.jpg'
           },
           {
             id: '5',
@@ -87,7 +87,7 @@ export const fitnessService = {
             duration: '28 days',
             trainer: 'David Kim',
             category: 'flexibility',
-            image: 'https://placehold.co/600x400/0a0a0a/39FF14?text=Flexibility'
+            image: '/f4.jpg'
           }
         ]);
       }, 800);
@@ -106,7 +106,7 @@ export const fitnessService = {
           duration: '30 days',
           trainer: 'Alex Johnson',
           category: 'strength',
-          image: 'https://placehold.co/600x400/0a0a0a/39FF14?text=30+Day+Challenge'
+          image: '/f11.jpg'
         });
       }, 600);
     });
@@ -166,7 +166,7 @@ export const fitnessService = {
             id: 'v1',
             title: 'Full Body HIIT',
             instructor: 'Alex Johnson',
-            thumbnail: 'https://placehold.co/600x400/0a0a0a/39FF14?text=Full+Body+HIIT',
+            thumbnail: '/f5.jpg',
             duration: '30 min',
             level: 'Advanced',
             category: 'hiit'
@@ -175,7 +175,7 @@ export const fitnessService = {
             id: 'v2',
             title: 'Beginner Yoga Flow',
             instructor: 'Samantha Lee',
-            thumbnail: 'https://placehold.co/600x400/0a0a0a/39FF14?text=Beginner+Yoga',
+            thumbnail: '/f6.jpg',
             duration: '20 min',
             level: 'Beginner',
             category: 'yoga'
@@ -184,7 +184,7 @@ export const fitnessService = {
             id: 'v3',
             title: 'Strength Training Basics',
             instructor: 'Michael Chen',
-            thumbnail: 'https://placehold.co/600x400/0a0a0a/39FF14?text=Strength+Training',
+            thumbnail: '/f7.jpg',
             duration: '45 min',
             level: 'Intermediate',
             category: 'strength'
@@ -193,7 +193,7 @@ export const fitnessService = {
             id: 'v4',
             title: 'Cardio Kickboxing',
             instructor: 'Lisa Rodriguez',
-            thumbnail: 'https://placehold.co/600x400/0a0a0a/39FF14?text=Cardio+Kickboxing',
+            thumbnail: '/f8.jpg',
             duration: '35 min',
             level: 'Intermediate',
             category: 'cardio'
@@ -202,7 +202,7 @@ export const fitnessService = {
             id: 'v5',
             title: 'Core Workout',
             instructor: 'David Kim',
-            thumbnail: 'https://placehold.co/600x400/0a0a0a/39FF14?text=Core+Workout',
+            thumbnail: '/f9.jpg',
             duration: '15 min',
             level: 'Beginner',
             category: 'core'
@@ -211,7 +211,7 @@ export const fitnessService = {
             id: 'v6',
             title: 'Advanced Pilates',
             instructor: 'Emma Wilson',
-            thumbnail: 'https://placehold.co/600x400/0a0a0a/39FF14?text=Advanced+Pilates',
+            thumbnail: '/f10.jpg',
             duration: '40 min',
             level: 'Advanced',
             category: 'pilates'

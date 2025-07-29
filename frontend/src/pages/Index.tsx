@@ -16,6 +16,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { AddCardModal } from "../components/home/AddCardModal";
 import { toast } from "sonner";
+import { Link } from "react-router-dom";
 
 interface CustomCard {
   id: string;
@@ -91,11 +92,11 @@ const Index = () => {
         {/* Explore Plans Section */}
         <section className="py-16 container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-orbitron mb-4 md:mb-0">
+          <h2 className="text-2xl md:text-3xl font-orbitron mb-4 md:mb-0">
               <span className="text-white">EXPLORE </span>
               <span className="text-glow-green">FITNESS PLANS</span>
             </h2>
-            <Button 
+           <Button 
               onClick={() => navigate('/explore-plans')}
               className="bg-glow-green text-black hover:bg-glow-green/80 transition-colors"
             >
@@ -105,7 +106,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="glass-card hover:border-glow-green/30 transition-all duration-300 overflow-hidden group cursor-pointer" onClick={() => navigate('/explore-plans')}>
-              <div className="h-40 bg-cover bg-center" style={{ backgroundImage: "url('https://placehold.co/600x400/0a0a0a/39FF14?text=Strength+Training')" }}>
+              <div className="h-40 bg-cover bg-center" style={{ backgroundImage: "url('/f2.jpg')" }}>
                 <div className="w-full h-full flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
                   <h3 className="text-xl font-orbitron text-white">Strength Training</h3>
                 </div>
@@ -123,7 +124,7 @@ const Index = () => {
             </div>
             
             <div className="glass-card hover:border-glow-green/30 transition-all duration-300 overflow-hidden group cursor-pointer" onClick={() => navigate('/explore-plans')}>
-              <div className="h-40 bg-cover bg-center" style={{ backgroundImage: "url('https://placehold.co/600x400/0a0a0a/39FF14?text=HIIT+Workouts')" }}>
+              <div className="h-40 bg-cover bg-center" style={{ backgroundImage: "url('/f3.jpg')" }}>
                 <div className="w-full h-full flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
                   <h3 className="text-xl font-orbitron text-white">HIIT Workouts</h3>
                 </div>
@@ -141,7 +142,7 @@ const Index = () => {
             </div>
             
             <div className="glass-card hover:border-glow-green/30 transition-all duration-300 overflow-hidden group cursor-pointer" onClick={() => navigate('/explore-plans')}>
-              <div className="h-40 bg-cover bg-center" style={{ backgroundImage: "url('https://placehold.co/600x400/0a0a0a/39FF14?text=Flexibility+%26+Mobility')" }}>
+              <div className="h-40 bg-cover bg-center" style={{ backgroundImage: "url('/f4.jpg')" }}>
                 <div className="w-full h-full flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
                   <h3 className="text-xl font-orbitron text-white">Flexibility & Mobility</h3>
                 </div>

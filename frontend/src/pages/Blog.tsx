@@ -18,7 +18,7 @@ const Blog = () => {
     readTime: "15 min read",
     likes: 342,
     category: "Motivation",
-    image: "https://placehold.co/800x400/0a0a0a/39FF14?text=Mental+Toughness",
+    image: "/f1.jpg",
     tags: ["mindset", "psychology", "performance"]
   };
   
@@ -32,7 +32,7 @@ const Blog = () => {
       readTime: "12 min read",
       likes: 287,
       category: "Training Tips",
-      image: "https://placehold.co/600x400/0a0a0a/39FF14?text=Muscle+Growth",
+      image: "/f2.jpg",
       tags: ["hypertrophy", "strength", "science"]
     },
     {
@@ -44,7 +44,7 @@ const Blog = () => {
       readTime: "9 min read",
       likes: 215,
       category: "Recovery & Rest",
-      image: "https://placehold.co/600x400/0a0a0a/39FF14?text=Recovery+Strategies",
+      image: "/f3.jpg",
       tags: ["recovery", "sleep", "nutrition"]
     },
     {
@@ -56,7 +56,7 @@ const Blog = () => {
       readTime: "18 min read",
       likes: 432,
       category: "Athlete Interviews",
-      image: "https://placehold.co/600x400/0a0a0a/39FF14?text=Olympic+Interview",
+      image: "/f4.jpg",
       tags: ["olympian", "interview", "inspiration"]
     },
     {
@@ -68,7 +68,7 @@ const Blog = () => {
       readTime: "11 min read",
       likes: 198,
       category: "Motivation",
-      image: "https://placehold.co/600x400/0a0a0a/39FF14?text=Breakthrough+Moment",
+      image: "/f8.jpg",
       tags: ["motivation", "consistency", "mindset"]
     },
     {
@@ -80,7 +80,7 @@ const Blog = () => {
       readTime: "13 min read",
       likes: 276,
       category: "Training Tips",
-      image: "https://placehold.co/600x400/0a0a0a/39FF14?text=Progressive+Overload",
+      image: "/f10.jpg",
       tags: ["strength", "programming", "technique"]
     },
     {
@@ -92,7 +92,7 @@ const Blog = () => {
       readTime: "14 min read",
       likes: 301,
       category: "Recovery & Rest",
-      image: "https://placehold.co/600x400/0a0a0a/39FF14?text=Sleep+Science",
+      image: "/f11.jpg",
       tags: ["sleep", "recovery", "hormones"]
     }
   ];

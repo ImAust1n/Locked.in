@@ -6,9 +6,9 @@ export const PageBackground: React.FC<{ children: React.ReactNode }> = ({ childr
     <div className="min-h-screen relative bg-black">
       {/* Background image with overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-fixed z-0 opacity-20"
+        className="absolute inset-0 bg-cover bg-center bg-fixed z-0 opacity-50"
         style={{ 
-          backgroundImage: "url('https://placehold.co/1920x1080/0a0a0a/39FF14?text=Fitness+Background')", 
+          backgroundImage: "url('/hulk.jpg')", 
           backgroundBlendMode: "overlay" 
         }}
       />
