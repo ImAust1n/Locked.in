@@ -94,7 +94,7 @@ export const Hero = () => {
                 </div>
               </div>
               
-              <Link to="/fitness/hiit-cardio-blast" className="btn-glow w-full text-center">
+              <Link to="/start-workout" className="btn-glow w-full text-center">
                 Start Workout
               </Link>
             </div>

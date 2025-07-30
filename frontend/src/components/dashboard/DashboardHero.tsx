@@ -6,10 +6,10 @@ import { toast } from 'sonner';
 export const DashboardHero = () => {
   const [greeting, setGreeting] = useState('');
   const [currentTime, setCurrentTime] = useState(new Date());
-  
+
   useEffect(() => {
     const hour = currentTime.getHours();
-    
+
     if (hour < 12) {
       setGreeting('Good Morning');
     } else if (hour < 17) {
@@ -17,11 +17,11 @@ export const DashboardHero = () => {
     } else {
       setGreeting('Good Evening');
     }
-    
+
     const timer = setInterval(() => {
       setCurrentTime(new Date());
     }, 60000);
-    
+
     return () => clearInterval(timer);
   }, []);
 
@@ -32,7 +32,7 @@ export const DashboardHero = () => {
         <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-glow-green/5 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-glow-red/5 rounded-full filter blur-3xl"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 py-6 md:py-8 relative">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
           <div>
@@ -43,32 +43,27 @@ export const DashboardHero = () => {
               </h1>
             </div>
             <p className="text-gray-400 mt-1">
-              {currentTime.toLocaleDateString('en-IN', { 
-                weekday: 'long', 
+              {currentTime.toLocaleDateString('en-IN', {
+                weekday: 'long',
                 day: 'numeric',
                 month: 'long'
               })}
             </p>
           </div>
-          
-          <div className="flex items-center space-x-3 mt-4 md:mt-0">
-            <button onClick={() => {
-toast.promise(
-  fetch('http://localhost:5001/api/send', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ userId: 'Arjun', type: 'notification' }),
-  }).then(res => {
-    if (!res.ok) throw new Error('Failed to check notifications');
-    return res.json();
-  }),
-  {
-    loading: 'Checking notifications...',
-    success: 'Notifications updated',
-    error: 'Could not check notifications'
-  }
-);
 
+          <div className="flex items-center space-x-3 mt-4 md:mt-0">
+            <button onClick={async () => {
+              toast.promise(
+                (async () => {
+                  const { emailService } = await import('@/services/emailService');
+                  return emailService.sendStreakLossEmail('Arjun', 'austinmiracle007@gmail.com');
+                })(),
+                {
+                  loading: 'Sending streak loss email...',
+                  success: 'Streak loss email sent!',
+                  error: 'Failed to send streak loss email'
+                }
+              );
             }} className="p-2 rounded-full bg-background/30 border border-glow-green/20 hover:border-glow-green/60 transition-colors relative">
               <Bell size={20} />
               <span className="absolute top-0 right-0 w-2 h-2 bg-glow-red rounded-full"></span>
@@ -81,7 +76,7 @@ toast.promise(
             </div>
           </div>
         </div>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="glass-card p-4 rounded-lg">
             <div className="text-gray-400 text-sm mb-1">Streak</div>
@@ -90,7 +85,7 @@ toast.promise(
               <span className="text-gray-400 ml-1">days</span>
             </div>
           </div>
-          
+
           <div className="glass-card p-4 rounded-lg">
             <div className="text-gray-400 text-sm mb-1">Today's Goal</div>
             <div className="flex items-end">
@@ -98,7 +93,7 @@ toast.promise(
               <span className="text-gray-400 ml-1">% complete</span>
             </div>
           </div>
-          
+
           <div className="glass-card p-4 rounded-lg">
             <div className="text-gray-400 text-sm mb-1">Upcoming</div>
             <div className="flex items-end">
@@ -106,7 +101,7 @@ toast.promise(
               <span className="text-gray-400 ml-1 text-sm">16:30</span>
             </div>
           </div>
-          
+
           <div className="glass-card p-4 rounded-lg">
             <div className="text-gray-400 text-sm mb-1">Weekly XP</div>
             <div className="flex items-end">

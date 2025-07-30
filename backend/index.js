@@ -4,6 +4,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import { connectDB } from "./src/libs/db.js"
 import authRoutes from "./src/routes/auth.route.js";
+import emailRoutes from "./src/routes/email.route.js";
 
 dotenv.config()
 
@@ -53,6 +54,8 @@ app.get('/', (req, res) => {
 
 // Use Routes
 app.use('/api/auth', authRoutes);
+
+app.use('/api/email', emailRoutes);
 
 app.use('/api/check', (req, res) => {
     res.status(200).json({ message: "Hello World" });

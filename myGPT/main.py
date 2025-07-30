@@ -1,12 +1,7 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify
 from flask_cors import CORS
-# from transformers import pipeline
-# import torch
 import requests
 import json
-# from PIL import Image
-# import io
-# import ollama
 from dotenv import load_dotenv
 import os
 from langchain_groq import ChatGroq
@@ -183,7 +178,8 @@ def wellness():
             return jsonify({"response": "Error: " + response.text})
 
     except requests.exceptions.RequestException as e:
-        return jsonify({"response": "Error: " + str(e)})  
+        return jsonify({"response": "Error: " + str(e)}) 
+    
 
 #Llama 3.2
 # @app.route('/api/chat2', methods=['POST'])
